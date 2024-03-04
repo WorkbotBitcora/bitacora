@@ -18,15 +18,15 @@ public class registrosService {
     }//ok
     public List<Bitacora> mostrarAgenda(){
         return reg.getRegistros();
-    }
+    }//ok
 
     public List<Bitacora> mostrarCompletados(){
         return reg.getRegistrosCompletados();
-    }
+    }//ya implementado en observaciones
 
     public void editarEquipo(long id , editableEquipo dato){
         reg.modificarEquipoPorId(id,dato);
-    }
+    }//ok
 
 
     public void crearResgistro(userDescription usde){
@@ -36,8 +36,8 @@ public class registrosService {
     public List<Bitacora> mostrarPorUsuario(long id){
 
         return reg.getRegistrosPorUsuario(id);
-    }
+    }//ok
     public void  cancelarRegistro(long id){
         reg.eliminarRegistro(id);
-    }
+    }//
 }

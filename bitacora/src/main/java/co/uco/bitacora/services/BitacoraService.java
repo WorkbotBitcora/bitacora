@@ -3,6 +3,7 @@ package co.uco.bitacora.services;
 import co.uco.bitacora.domains.bitacora.*;
 import co.uco.bitacora.domains.equipo.Equipo;
 import co.uco.bitacora.domains.equipo.TipoEquipo;
+import co.uco.bitacora.domains.equipo.editableEquipo;
 import co.uco.bitacora.domains.usuario.TipoUsuario;
 import co.uco.bitacora.domains.usuario.Usuario;
 import co.uco.bitacora.domains.usuario.editableUsuario;
@@ -11,6 +12,7 @@ import co.uco.bitacora.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -141,4 +143,34 @@ public class BitacoraService {
         return iBitacoraRepository.findAll();
     }
 
+    public void editarEquipo(long id , editableEquipo dato){
+        Equipo equ = new Equipo();
+        equ.setId(id);
+        equ.setMarca(dato.getMarca());
+        equ.setTipoEquipo(dato.getTipoEquipo());
+        iEquipoRepository.save(equ);
+    }
+
+    public List<Bitacora> mostrarPorUsuario(long id){
+        List<Bitacora> bitacorasPorUsuario = new ArrayList<>();
+        for (int i = 0 ; i<iBitacoraRepository.findAll().size(); i++ ){
+            iBitacoraRepository.findById((long)i).ifPresent(dato -> {
+                if (dato.getUsuario().getId() == id){
+                    bitacorasPorUsuario.add(dato);
+                }
+            });
+        }
+        return bitacorasPorUsuario;
+    }
+
+    public Bitacora traerBitacoraPorID(long id){
+        iBitacoraRepository.findById(id).ifPresent(dato -> {
+            bitacoraAUX= dato;
+        });
+        return bitacoraAUX;
+    }
+
+    public void cancelarSolicitid(long id){
+        iBitacoraRepository.deleteById(id);
+    }
 }
