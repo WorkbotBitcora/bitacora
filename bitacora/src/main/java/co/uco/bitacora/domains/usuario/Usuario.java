@@ -1,21 +1,36 @@
 package co.uco.bitacora.domains.usuario;
 
-public class Usuario {
-    private long id;
-    private String nombre;
+import co.uco.bitacora.repository.ITipoUsuarioRepository;
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "Usuarios")
+public class Usuario {
+
+    @Id
+    private long id;
+
+
+    private String nombre;
+    @OneToOne
     private TipoUsuario tipoUsuario;
 
-    public Usuario(long id, String nombre, long idTipoUsuario) {
+
+
+    public Usuario(long id, String nombre, TipoUsuario idTipoUsuario) {
         this.id = id;
         this.nombre = nombre;
-        this.tipoUsuario = new TipoUsuario(idTipoUsuario);
+        this.tipoUsuario = idTipoUsuario;
+
     }
 
     public Usuario(String nombre, TipoUsuario tipoUsuario) {
         this.id = 1;
         this.nombre = nombre;
         this.tipoUsuario = tipoUsuario;
+    }
+
+    public Usuario() {
     }
 
 

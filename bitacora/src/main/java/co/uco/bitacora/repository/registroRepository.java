@@ -10,6 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class registroRepository {
+    private Revision revision;
+    private Estado estado;
+
     public  List<Bitacora> getRegistros() {
         return Bitacora;
     }
@@ -41,7 +44,9 @@ public class registroRepository {
         }
     }
     public void crearRegistro(editableUsuario user, Descripcion descripcion ){
-        Bitacora.add(new Bitacora(new Usuario(user.getId(),user.getNombre(),user.getIdTipoUsuario()),descripcion));
+        estado = new Estado(1);
+        revision = new Revision();
+        Bitacora.add(new Bitacora(new Usuario(user.getId(), user.getNombre(), new TipoUsuario(user.getIdTipoUsuario())),descripcion,revision ,estado));
     }
 
     public void eliminarRegistro(long id){
@@ -83,7 +88,7 @@ public class registroRepository {
 
     public void llenarDatos(){
 
-        tipoUsuario1 = new TipoUsuario();
+        /*tipoUsuario1 = new TipoUsuario();
         usuario1 = new Usuario("Alucard",tipoUsuario1);
         descripcion1 = new Descripcion("esta es la descripcion que pone el usuario 1");
         reg1 =new Bitacora(usuario1,descripcion1);
@@ -112,15 +117,15 @@ public class registroRepository {
         reg1.setEstado(new Estado(3));
         bitacoraCompletados.add(reg1);
         reg4.setEstado(new Estado(3));
-        bitacoraCompletados.add(reg4);
+        bitacoraCompletados.add(reg4);*/
 
     }
 
-    private void imprimirReviciones(Revicion rev ){
+    private void imprimirReviciones(Revision rev ){
         System.out.println("id Revicion: " + rev.getId());
         System.out.println(" Observaciones: ");
         imprimirObservaciones(rev.getObservacion());
-        System.out.println(" Fecha: " + rev.getFecha());
+        System.out.println(" Fecha: " + rev.getFechaFinal());
         System.out.println(" equipo: id: " + rev.getEquipo().getId() + ", Marca: " + rev.getEquipo().getMarca() + ", Tipo de Equipo: " + rev.getEquipo().getTipoEquipo().getNombre());
     }
     private void  imprimirObservaciones (Observacion obs){
@@ -131,7 +136,7 @@ public class registroRepository {
     }
     private void imprimirDatoPorConsola(Bitacora reg){
         System.out.println("id: " + reg.getId());
-        System.out.println("fecha: " + reg.getFecha());
+        System.out.println("fecha: " + reg.getFechaEntrada());
         System.out.println("descripcion: " + reg.getDescription().getDescripcion());
         System.out.println("Nombre de Usuario: " + reg.getUsuario().getNombre());
         System.out.println("reviciones: ");

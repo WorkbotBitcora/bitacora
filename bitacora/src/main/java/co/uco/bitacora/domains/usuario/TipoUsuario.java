@@ -1,8 +1,15 @@
 package co.uco.bitacora.domains.usuario;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "TipoUsuarios")
 public class TipoUsuario {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+
     private String descripcion;
 
     public TipoUsuario() {
@@ -21,7 +28,7 @@ public class TipoUsuario {
                 this.descripcion = "Tecnico";
                 break;
             default:
-                this.id = id;
+                this.id = 3;
                 this.descripcion ="no existe tipo usuario";
         }
     }

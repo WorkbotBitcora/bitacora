@@ -1,8 +1,14 @@
 package co.uco.bitacora.domains.equipo;
 
-public class TipoEquipo {
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "TiposEquipo")
+public class TipoEquipo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+
     private String nombre;
 
     public long getId() {

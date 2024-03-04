@@ -1,40 +1,48 @@
 package co.uco.bitacora.domains.bitacora;
 
 import co.uco.bitacora.domains.usuario.Usuario;
+import jakarta.persistence.*;
 
+
+import java.util.Date;
+
+@Entity
+@Table(name = "Bitacoras")
 public class Bitacora {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private  long id;
 
+    @OneToOne
     private Usuario usuario;
 
-    private String fecha;
+    @Temporal(TemporalType.DATE)
+    private Date fechaEntrada;
 
+    @OneToOne
     private Descripcion descripcion;
 
-    private Revicion Revicion;
+    @OneToOne
+    private Revision Revision;
 
+    @OneToOne
     private Estado Estado;
 
-    public Bitacora(Usuario usuario, Descripcion descripcion) {
-        this.id=1;
-        this.usuario = usuario;
-        this.fecha = "01/01/2020";
-        this.descripcion = descripcion;
-        this.Revicion = new Revicion();
-        this.Estado = new Estado();
+    @PrePersist
+    protected void onCreate(){
+        fechaEntrada = new Date();
     }
 
     public Bitacora() {
     }
 
-    public Bitacora(long id, Usuario usuario, String fecha, Descripcion descripcion, Revicion Revicion, Estado Estado) {
-        this.id = id;
+
+    public Bitacora(Usuario usuario, Descripcion descripcion , Revision revision , Estado estado ) {
         this.usuario = usuario;
-        this.fecha = fecha;
         this.descripcion = descripcion;
-        this.Revicion = Revicion;
-        this.Estado = Estado;
+        this.Revision=revision;
+        this.Estado=estado;
     }
 
     public long getId() {
@@ -50,31 +58,31 @@ public class Bitacora {
     }
 
     public void setUsuario(Usuario usuarioID) {
-        this.usuario = usuario;
+        this.usuario = usuarioID;
     }
 
-    public String getFecha() {
-        return fecha;
+    public Date getFechaEntrada() {
+        return fechaEntrada;
     }
 
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
+    public void setFechaEntrada(Date fechaEntrada) {
+        this.fechaEntrada = fechaEntrada;
     }
 
     public Descripcion getDescription() {
         return descripcion;
     }
 
-    public void setDescripcion(long descriptionID) {
-        this.descripcion = descripcion;
+    public void setDescripcion(Descripcion descriptionID) {
+        this.descripcion = descriptionID;
     }
 
-    public Revicion getRevision() {
-        return Revicion;
+    public Revision getRevision() {
+        return Revision;
     }
 
-    public void setRevision(Revicion revicionID) {
-        this.Revicion = Revicion;
+    public void setRevision(Revision revisionID) {
+        this.Revision = revisionID;
     }
 
     public Estado getEstado() {
@@ -84,4 +92,7 @@ public class Bitacora {
     public void setEstado(Estado Estado) {
         this.Estado = Estado;
     }
+
+
+
 }

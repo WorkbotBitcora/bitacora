@@ -15,7 +15,7 @@ public class registrosService {
     public List<Bitacora> llenarDatos(){
         reg.llenarDatos();
         return reg.getRegistros();
-    }
+    }//ok
     public List<Bitacora> mostrarAgenda(){
         return reg.getRegistros();
     }
@@ -27,9 +27,11 @@ public class registrosService {
     public void editarEquipo(long id , editableEquipo dato){
         reg.modificarEquipoPorId(id,dato);
     }
+
+
     public void crearResgistro(userDescription usde){
         reg.crearRegistro(new editableUsuario(usde.getIdUser(),usde.getNombre(),usde.getIdTipouser()),new Descripcion(usde.getIdDesc(),usde.getDesc()));
-    }
+    }// ok
 
     public List<Bitacora> mostrarPorUsuario(long id){
 

@@ -1,6 +1,12 @@
 package co.uco.bitacora.domains.bitacora;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "Estados")
 public class Estado {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id ;
     private String nombre;
 
@@ -12,16 +18,21 @@ public class Estado {
     public Estado(long id) {
         switch ((int)id){
             case 1:
+                this.id=1;
                 this.nombre = "Incompleto";
                 break;
             case 2:
+                this.id=2;
                 this.nombre = "En Revision";
                 break;
             case 3:
+                this.id=3;
                 this.nombre = "Completo";
                 break;
+            default:
+                this.id = 4;
+                this.nombre="Estado No Registrado";
         }
-        this.id = id;
     }
 
     public long getId() {

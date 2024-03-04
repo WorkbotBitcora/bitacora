@@ -1,12 +1,20 @@
 package co.uco.bitacora.domains.bitacora;
 
+import jakarta.persistence.*;
+
 import java.util.ArrayList;
 import java.util.List;
-
+@Entity
+@Table(name = "Observaciones")
 public class Observacion {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+
     private String descripcion;
 
+    // hacer revision par
+    @OneToMany
     private List<Recomendacion> recomendacionList = new ArrayList<>();
 
     private String mejora;
@@ -16,6 +24,13 @@ public class Observacion {
         this.descripcion = "vacio";
         this.mejora="vacio";
         this.recomendacionList.add(new Recomendacion());
+    }
+
+    public Observacion(List<Recomendacion> recomendacionList) {
+        this.id=1;
+        this.descripcion = "vacio";
+        this.mejora="vacio";
+        this.recomendacionList = recomendacionList;
     }
 
     public long getId() {
