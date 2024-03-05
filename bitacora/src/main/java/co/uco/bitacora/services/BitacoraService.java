@@ -40,16 +40,16 @@ public class BitacoraService {
     private IEstadoRepository iEstadoRepository;
 
 
-    private Bitacora bitacoraAUX;
-    private Usuario usuarioAux;
-    private Descripcion descripcionAux;
-    private TipoUsuario tipoUsuarioAux;
-    private Revision revisionAux;
-    private Estado estadoAux;
-    private Observacion observacionAux;
-    private Equipo equipoAux;
-    private TipoEquipo tipoEquipoAux;
-    private Recomendacion recomendacionAux;
+    private Bitacora bitacoraAUX = new Bitacora();
+    private Usuario usuarioAux = new Usuario();
+    private Descripcion descripcionAux =new Descripcion();
+    private TipoUsuario tipoUsuarioAux = new TipoUsuario();
+    private Revision revisionAux = new Revision();
+    private Estado estadoAux = new Estado();
+    private Observacion observacionAux = new Observacion();
+    private Equipo equipoAux = new Equipo();
+    private TipoEquipo tipoEquipoAux = new TipoEquipo();
+    private Recomendacion recomendacionAux = new Recomendacion();
 
 
 
@@ -90,7 +90,7 @@ public class BitacoraService {
         iBitacoraRepository.save(bitacoraAUX);
     }
 
-    private void actualizarDatosBasicos(){
+    public void actualizarDatosBasicos(){
         /* aqui se crea los datos estaticos de
         * tipo usuario ( 1 ó 2 y 3) ok
         * tipo equipo (1 ó 2 ó 3) ok
@@ -99,7 +99,12 @@ public class BitacoraService {
         * */
         //llenamos los tipo usuario
         tipoUsuarioAux = new TipoUsuario(1);
+
+        System.out.println( "id: " + tipoEquipoAux.getId() + " descripcion: " + tipoUsuarioAux.getDescripcion() );
+
         iTipoUsuarioRepository.save(tipoUsuarioAux);
+
+        System.out.println("intento guardar");
 
         tipoUsuarioAux = new TipoUsuario(2);
         iTipoUsuarioRepository.save(tipoUsuarioAux);

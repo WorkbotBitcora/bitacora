@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class TipoUsuario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     private String descripcion;
