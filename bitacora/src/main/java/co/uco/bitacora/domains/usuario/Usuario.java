@@ -12,6 +12,9 @@ public class Usuario {
 
 
     private String nombre;
+    private String apellido;
+    private String usuario;
+    private String contrasena;
     @OneToOne
     private TipoUsuario tipoUsuario;
 
@@ -28,6 +31,15 @@ public class Usuario {
         this.id = 1;
         this.nombre = nombre;
         this.tipoUsuario = tipoUsuario;
+    }
+
+    public Usuario(long id, String nombre, String apellido, String usuario, String contrasena, TipoUsuario tipoUsuario) {
+        setId(id);
+        setNombre(nombre);
+        setApellido(apellido);
+        setUsuario(usuario);
+        setContrasena(contrasena);
+        setTipoUsuario(tipoUsuario);
     }
 
     public Usuario() {
@@ -49,6 +61,18 @@ public class Usuario {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    public String getApellido() {return apellido;}
+
+    public void setApellido(String apellido) {this.apellido = apellido;}
+
+    public String getUsuario() {return usuario;}
+
+    public void setUsuario(String usuario) {this.usuario = usuario;}
+
+    public String getContrasena() {return contrasena;}
+
+    public void setContrasena(String contrasena) {this.contrasena = contrasena;}
 
     public TipoUsuario getTipoUsuario() {
         return tipoUsuario;
