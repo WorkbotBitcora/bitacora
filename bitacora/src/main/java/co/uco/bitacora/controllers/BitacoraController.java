@@ -3,6 +3,7 @@ package co.uco.bitacora.controllers;
 import co.uco.bitacora.domains.equipo.editableEquipo;
 import co.uco.bitacora.domains.usuario.userDescription;
 import co.uco.bitacora.services.BitacoraService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,15 +11,18 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/procesador/bitacora/v2/bitacora")
 public class BitacoraController {
+
+    @Autowired
     private BitacoraService ServiciosDeBitacora = new BitacoraService();
 
 
-    @GetMapping("/cargarDB")
+    @PostMapping("/cargarDB")
     public void llenardata(){
         ServiciosDeBitacora.actualizarDatosBasicos();
     }
 
 
+/*
     @GetMapping("/")
     public ResponseEntity<?> mostrarAgenda() {
         return ResponseEntity.ok(ServiciosDeBitacora.mostrarAgenda());
@@ -45,5 +49,5 @@ public class BitacoraController {
     public void calcelarSolicitud(@PathVariable long id){
         ServiciosDeBitacora.cancelarSolicitid(id);
     }
-
+*/
 }

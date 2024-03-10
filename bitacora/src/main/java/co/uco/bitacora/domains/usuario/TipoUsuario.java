@@ -1,14 +1,17 @@
 package co.uco.bitacora.domains.usuario;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
+@Data
 @Entity
 @Table(name = "TipoUsuarios")
 public class TipoUsuario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+
 
     private String descripcion;
 

@@ -18,14 +18,19 @@ import java.util.List;
 @Service
 public class BitacoraService {
 
+
+    @Autowired
+    private ITipoUsuarioRepository iTipoUsuarioRepository;
+
+
+
     @Autowired
     private IBitacoraRepository iBitacoraRepository;
+   /*
     @Autowired
     private IDescripcionRepository iDescripcionRepository;
     @Autowired
     private IUsuarioRepository iUsuarioRepository;
-    @Autowired
-    private ITipoUsuarioRepository iTipoUsuarioRepository;
     @Autowired
     private IRevisionRepository iRevisionRepository;
     @Autowired
@@ -38,7 +43,7 @@ public class BitacoraService {
     private IRecomendacionRepository iRecomendacionRepository;
     @Autowired
     private IEstadoRepository iEstadoRepository;
-
+*/
 
     private Bitacora bitacoraAUX = new Bitacora();
     private Usuario usuarioAux = new Usuario();
@@ -55,6 +60,7 @@ public class BitacoraService {
 
 
     //posiblemente no lo use pero es la base de todo
+   /*
     public void AgregarBitacoraAlaAgenda(userDescription usde){
 
         //Aqui se Crea El Tipo de Usuario
@@ -89,7 +95,7 @@ public class BitacoraService {
         bitacoraAUX = new Bitacora(usuarioAux,descripcionAux,revisionAux ,estadoAux);
         iBitacoraRepository.save(bitacoraAUX);
     }
-
+*/
     public void actualizarDatosBasicos(){
         /* aqui se crea los datos estaticos de
         * tipo usuario ( 1 ó 2 y 3) ok
@@ -97,21 +103,28 @@ public class BitacoraService {
         * recomendaciones (arranca en 1 con el default) ok
         * estado (1 ó 2 ó 3 arranca en default con 1)
         * */
-        //llenamos los tipo usuario
-        tipoUsuarioAux = new TipoUsuario(1);
 
-        System.out.println( "id: " + tipoEquipoAux.getId() + " descripcion: " + tipoUsuarioAux.getDescripcion() );
+
+        //llenamos los tipo usuario
+        tipoUsuarioAux = new TipoUsuario(2);
+
+        System.out.println( "id: " + tipoUsuarioAux.getId() + " descripcion: " + tipoUsuarioAux.getDescripcion() );
+
+        System.out.println("Guarda en base de datos la recomendacion");
+
+        iTipoUsuarioRepository.findAll();
 
         iTipoUsuarioRepository.save(tipoUsuarioAux);
 
-        System.out.println("intento guardar");
+        System.out.println(iTipoUsuarioRepository.findAll());
 
+        /*
         tipoUsuarioAux = new TipoUsuario(2);
         iTipoUsuarioRepository.save(tipoUsuarioAux);
 
         tipoUsuarioAux = new TipoUsuario(3);
-        iTipoUsuarioRepository.save(tipoUsuarioAux);
-
+        iTipoUsuarioRepository.save(tipoUsuarioAux);*/
+/*
         // llenamos los tipo equipo
         tipoEquipoAux = new TipoEquipo(1);
         iTipoEquipoRepository.save(tipoEquipoAux);
@@ -141,13 +154,14 @@ public class BitacoraService {
 
         estadoAux=new Estado(4);
         iEstadoRepository.save(estadoAux);
-
+*/
     }
-
+/*
     public List<Bitacora> mostrarAgenda(){
         return iBitacoraRepository.findAll();
     }
-
+*/
+    /*
     public void editarEquipo(long id , editableEquipo dato){
         Equipo equ = new Equipo();
         equ.setId(id);
@@ -155,7 +169,8 @@ public class BitacoraService {
         equ.setTipoEquipo(dato.getTipoEquipo());
         iEquipoRepository.save(equ);
     }
-
+*/
+    /*
     public List<Bitacora> mostrarPorUsuario(long id){
         List<Bitacora> bitacorasPorUsuario = new ArrayList<>();
         for (int i = 0 ; i<iBitacoraRepository.findAll().size(); i++ ){
@@ -167,7 +182,8 @@ public class BitacoraService {
         }
         return bitacorasPorUsuario;
     }
-
+*/
+    /*
     public Bitacora traerBitacoraPorID(long id){
         iBitacoraRepository.findById(id).ifPresent(dato -> {
             bitacoraAUX= dato;
@@ -178,4 +194,6 @@ public class BitacoraService {
     public void cancelarSolicitid(long id){
         iBitacoraRepository.deleteById(id);
     }
+    */
+
 }
