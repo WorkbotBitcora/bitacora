@@ -1,5 +1,6 @@
 package co.uco.bitacora.domains.bitacora;
 
+import co.uco.bitacora.domains.recomendacion.Recomendacion;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;

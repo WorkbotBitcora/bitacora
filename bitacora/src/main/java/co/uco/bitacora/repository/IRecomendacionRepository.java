@@ -1,6 +1,6 @@
 package co.uco.bitacora.repository;
 
-import co.uco.bitacora.domains.bitacora.Recomendacion;
+import co.uco.bitacora.domains.recomendacion.Recomendacion;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

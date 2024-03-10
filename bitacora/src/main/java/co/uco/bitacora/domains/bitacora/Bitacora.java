@@ -1,5 +1,6 @@
 package co.uco.bitacora.domains.bitacora;
 
+import co.uco.bitacora.domains.revision.Revision;
 import co.uco.bitacora.domains.usuario.Usuario;
 import jakarta.persistence.*;
 
@@ -24,7 +25,7 @@ public class Bitacora {
     private Descripcion descripcion;
 
     @OneToOne
-    private Revision Revision;
+    private co.uco.bitacora.domains.revision.Revision Revision;
 
     @OneToOne
     private Estado Estado;

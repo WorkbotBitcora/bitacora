@@ -2,6 +2,7 @@ package co.uco.bitacora.repository;
 
 import co.uco.bitacora.domains.bitacora.*;
 import co.uco.bitacora.domains.equipo.editableEquipo;
+import co.uco.bitacora.domains.revision.Revision;
 import co.uco.bitacora.domains.usuario.editableUsuario;
 import co.uco.bitacora.domains.usuario.TipoUsuario;
 import co.uco.bitacora.domains.usuario.Usuario;
