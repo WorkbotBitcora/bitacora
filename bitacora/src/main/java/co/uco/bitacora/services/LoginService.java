@@ -5,6 +5,7 @@ import co.uco.bitacora.domains.bitacora.*;
 import co.uco.bitacora.domains.usuario.TipoUsuario;
 import co.uco.bitacora.domains.usuario.Usuario;
 
+import co.uco.bitacora.domains.usuario.editableUsuario;
 import co.uco.bitacora.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,7 +24,6 @@ public class LoginService {
     private TipoUsuario tipoUsuarioAux = new TipoUsuario();
 
 
-
     public void actualizarDatosBasicos() {
         /* aqui se crea los datos estaticos de
          * tipo usuario ( 1 ó 2 y 3) ok
@@ -34,7 +34,7 @@ public class LoginService {
         //llenamos los tipo usuario
         tipoUsuarioAux = new TipoUsuario(1);
 
-        System.out.println("id: " + tipoEquipoAux.getId() + " descripcion: " + tipoUsuarioAux.getDescripcion());
+        System.out.println("id: " + tipoUsuarioAux.getId() + " descripcion: " + tipoUsuarioAux.getDescripcion());
 
         iTipoUsuarioRepository.save(tipoUsuarioAux);
 
@@ -47,45 +47,56 @@ public class LoginService {
         iTipoUsuarioRepository.save(tipoUsuarioAux);
     }
 
-    public void AgregarUsuario(Usuario usde) {
+    public void AgregarUsuario(editableUsuario usde) {
 
         //Aqui se Crea El Tipo de Usuario
-        tipoUsuarioAux = new TipoUsuario(usde.getIdTipouser());
+        tipoUsuarioAux = new TipoUsuario(usde.getIdTipoUsuario());
 
         //Aqui se Crea el usuario
-        usuarioAux = new Usuario(usde.getIdUser(), usde.getNombre(), usde.getApellido(), usde.getUsuario(),usde.getContrasena(), tipoUsuarioAux);
+        usuarioAux = new Usuario(usde.getId(), usde.getNombre(), usde.getApellido(), usde.getUsuario(), usde.getContrasena(), tipoUsuarioAux);
         iUsuarioRepository.save(usuarioAux);
     }
 
-    public List<Usuario> mostrarUsuarios(){
+    public List<Usuario> mostrarUsuarios() {
         return iUsuarioRepository.findAll();
     }
-    public void editarUsuario(long id , Usuario dato){
+
+    public void editarUsuario(editableUsuario dato) {
         Usuario equ = new Usuario();
-        equ.setId(id);
+        equ.setId(dato.getId());
         equ.setNombre(dato.getNombre());
         equ.setApellido(dato.getApellido());
-        equ.setContrasena(dato.getContrasena);
+        equ.setContrasena(dato.getContrasena());
+        tipoUsuarioAux = new TipoUsuario(dato.getIdTipoUsuario());
+        equ.setTipoUsuario(tipoUsuarioAux);
         iUsuarioRepository.save(equ);
     }
-    public List<Usuario> mostrarPorUsuario(long id){
+
+    public List<Usuario> mostrarPorUsuario(long id) {
         List<Usuario> bitacorasPorUsuario = new ArrayList<>();
-        for (int i = 0 ; i<iUsuarioRepository.findAll().size(); i++ ){
-            iUsuarioRepository.findById((long)i).ifPresent(dato -> {
-                if (dato.getUsuario().getId() == id){
+        for (int i = 0; i < iUsuarioRepository.findAll().size(); i++) {
+            iUsuarioRepository.findById((long) i).ifPresent(dato -> {
+                if (dato.getId() == id) {
                     bitacorasPorUsuario.add(dato);
                 }
             });
         }
         return bitacorasPorUsuario;
-    public Usuario traerUsuarioPorID(long id){
+    }
+
+    // revisar con mas detalle
+    public Usuario traerUsuarioPorID(long id) {
         iUsuarioRepository.findById(id).ifPresent(dato -> {
-            usuarioAux= dato;
+            usuarioAux = dato;
         });
         return usuarioAux;
     }
 
-    public void cancelarSolicitid(long id){
+    public List<Usuario> mostrarUsuario (){
+        return iUsuarioRepository.findAll();
+    }
+
+    public void cancelarSolicitid(long id) {
         iUsuarioRepository.deleteById(id);
     }
 }

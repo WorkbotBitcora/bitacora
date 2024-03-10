@@ -22,7 +22,7 @@ public class BitacoraController {
     }
 
 
-/*
+
     @GetMapping("/")
     public ResponseEntity<?> mostrarAgenda() {
         return ResponseEntity.ok(ServiciosDeBitacora.mostrarAgenda());
@@ -49,5 +49,5 @@ public class BitacoraController {
     public void calcelarSolicitud(@PathVariable long id){
         ServiciosDeBitacora.cancelarSolicitid(id);
     }
-*/
+
 }
