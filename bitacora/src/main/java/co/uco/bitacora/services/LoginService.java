@@ -47,14 +47,15 @@ public class LoginService {
         iTipoUsuarioRepository.save(tipoUsuarioAux);
     }
 
-    public void AgregarUsuario(editableUsuario usde) {
-
-        //Aqui se Crea El Tipo de Usuario
-        tipoUsuarioAux = new TipoUsuario(usde.getIdTipoUsuario());
-
-        //Aqui se Crea el usuario
-        usuarioAux = new Usuario(usde.getId(), usde.getNombre(), usde.getApellido(), usde.getUsuario(), usde.getContrasena(), tipoUsuarioAux);
-        iUsuarioRepository.save(usuarioAux);
+    public String AgregarUsuario(editableUsuario usde) {
+        try {
+            //Aqui se Crea el usuario
+            usuarioAux = new Usuario(usde.getNombre(), usde.getApellido(), usde.getUsuario(), usde.getContrasena(), usde.getIdTipoUsuario());
+            iUsuarioRepository.save(usuarioAux);
+            return "Registro Exitoso";
+        }catch (Exception e ){
+            return "Usuario No Registrado \n" +  e.getMessage();
+        }
     }
 
     public List<Usuario> mostrarUsuarios() {
@@ -62,8 +63,8 @@ public class LoginService {
     }
 
     public void editarUsuario(editableUsuario dato) {
+
         Usuario equ = new Usuario();
-        equ.setId(dato.getId());
         equ.setNombre(dato.getNombre());
         equ.setApellido(dato.getApellido());
         equ.setContrasena(dato.getContrasena());

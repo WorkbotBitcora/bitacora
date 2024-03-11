@@ -16,14 +16,19 @@ public class BitacoraController {
     private BitacoraService ServiciosDeBitacora = new BitacoraService();
 
 
-    @PostMapping("/cargarDB")
+
+    @PostMapping("/cargarDB")// paso pruebas
     public void llenardata(){
         ServiciosDeBitacora.actualizarDatosBasicos();
     }
 
+    @DeleteMapping("/")//paso pruebas
+    public void limpiarDB(){
+        ServiciosDeBitacora.limpiarDB();
+    }
 
 
-    @GetMapping("/")
+    @GetMapping("/")//ok a medias
     public ResponseEntity<?> mostrarAgenda() {
         return ResponseEntity.ok(ServiciosDeBitacora.mostrarAgenda());
     }
@@ -34,10 +39,10 @@ public class BitacoraController {
         ServiciosDeBitacora.editarEquipo(id,dato);
     }
 
-    @PostMapping("/nuevaAgenda")
+    @PostMapping("/agenda")
     @ResponseStatus(HttpStatus.CREATED)
-    public void ingresarRegistro(@RequestBody userDescription usde){
-        ServiciosDeBitacora.AgregarBitacoraAlaAgenda(usde);
+    public String ingresarRegistro(@RequestBody userDescription usde){
+        return ServiciosDeBitacora.AgregarBitacoraAlaAgenda(usde);
     }
 
     @GetMapping("/usuario/{id}")

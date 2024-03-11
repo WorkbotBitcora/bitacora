@@ -15,19 +15,19 @@ public class Bitacora {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private  long id;
 
-    @OneToOne
+    @ManyToOne
     private Usuario usuario;
 
     @Temporal(TemporalType.DATE)
     private Date fechaEntrada;
 
-    @OneToOne
+    @ManyToOne
     private Descripcion descripcion;
 
-    @OneToOne
-    private co.uco.bitacora.domains.revision.Revision Revision;
+    @ManyToOne
+    private Revision Revision;
 
-    @OneToOne
+    @ManyToOne
     private Estado Estado;
 
     @PrePersist

@@ -15,23 +15,12 @@ public class Observacion {
     private String descripcion;
 
     // hacer revision par
-    @OneToMany
-    private List<Recomendacion> recomendacionList = new ArrayList<>();
 
     private String mejora;
 
     public Observacion() {
-        this.id=1;
         this.descripcion = "vacio";
         this.mejora="vacio";
-        this.recomendacionList.add(new Recomendacion());
-    }
-
-    public Observacion(List<Recomendacion> recomendacionList) {
-        this.id=1;
-        this.descripcion = "vacio";
-        this.mejora="vacio";
-        this.recomendacionList = recomendacionList;
     }
 
     public long getId() {
@@ -48,14 +37,6 @@ public class Observacion {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
-    }
-
-    public List<Recomendacion> getRecomendacionesList() {
-        return recomendacionList;
-    }
-
-    public void setRecomendacionesList(List<Recomendacion> recomendacionList) {
-        this.recomendacionList = recomendacionList;
     }
 
     public String getMejora() {

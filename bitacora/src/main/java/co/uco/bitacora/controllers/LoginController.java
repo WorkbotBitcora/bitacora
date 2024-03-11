@@ -6,6 +6,7 @@ import co.uco.bitacora.domains.usuario.editableUsuario;
 import co.uco.bitacora.domains.usuario.userDescription;
 import co.uco.bitacora.services.BitacoraService;
 import co.uco.bitacora.services.LoginService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/procesador/bitacora/v2/login")
 public class LoginController {
+    @Autowired
     private LoginService loginService=new LoginService();
 
     @PostMapping ("/cargarDB")
@@ -31,11 +33,15 @@ public class LoginController {
     public void actualizarUsuario (@RequestBody editableUsuario dato){
         loginService.editarUsuario(dato);
     }
-    @PostMapping("/nuevoUsuario")
+
+
+    @PostMapping("/usuario")
     @ResponseStatus(HttpStatus.CREATED)
-    public void ingresarUsuario(@RequestBody editableUsuario usde){
-        loginService.AgregarUsuario(usde);
+    public String ingresarUsuario(@RequestBody editableUsuario usde){
+        return loginService.AgregarUsuario(usde);
     }
+
+
     @GetMapping("/usuario/{id}")
     public ResponseEntity<?> mostarPorUsuario(@PathVariable long id) {
         return ResponseEntity.ok(loginService.mostrarPorUsuario(id));

@@ -47,7 +47,7 @@ public class registroRepository {
     public void crearRegistro(editableUsuario user, Descripcion descripcion ){
         estado = new Estado(1);
         revision = new Revision();
-        Bitacora.add(new Bitacora(new Usuario(user.getId(), user.getNombre(), new TipoUsuario(user.getIdTipoUsuario())),descripcion,revision ,estado));
+        Bitacora.add(new Bitacora(new Usuario(user.getNombre(), new TipoUsuario(user.getIdTipoUsuario())),descripcion,revision ,estado));
     }
 
     public void eliminarRegistro(long id){
@@ -131,7 +131,6 @@ public class registroRepository {
     }
     private void  imprimirObservaciones (Observacion obs){
         System.out.println("id Observacion: " + obs.getId());
-        System.out.println("recomendacion: " + obs.getRecomendacionesList().get(0).getRecomendacion());
         System.out.println("descripcion : " + obs.getDescripcion());
         System.out.println("mejoras hechas: " + obs.getMejora());
     }
