@@ -14,6 +14,9 @@ public class Chek {
     private long id;
     private String nombre;
     private boolean estado;
+
+    @ManyToOne
+    private Revision revision;
     @OneToMany
     private List<Recomendacion> recomendacionList = new ArrayList<>();
 
@@ -62,6 +65,8 @@ public class Chek {
     public void setRecomendacionList(List<Recomendacion> recomendacionList) {
         this.recomendacionList = recomendacionList;
     }
+
+
 }
 
 

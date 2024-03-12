@@ -97,21 +97,20 @@ public class BitacoraService {
                 System.out.println("se creo el equipo");
 
                 listaChek = chekService.obtenerChecksPorId(equipoAux.getId());
+
+
+
                 //aqui se crea la revisiones
                 revisionAux = new Revision(observacionAux,equipoAux, listaChek);
                 System.out.println("id : " + revisionAux.getId());
                 System.out.println("lista contiene algo : " + revisionAux.getCheks().isEmpty());
                 System.out.println("equipo marca desde revision : " + revisionAux.getEquipo().getMarca());
                 System.out.println("id observacion  : " + revisionAux.getObservacion().getId());
-                System.out.println("chek :" + revisionAux.getCheks().get(0).getNombre() );
-                System.out.println("chek :" + revisionAux.getCheks().get(0).isEstado() );
-                System.out.println("chek rec :" + revisionAux.getCheks().get(0).getRecomendacionList().get(0).getRecomendacion() );
-                revisionAux1 = revisionAux;
-                try {
-                    iRevisionRepository.save(revisionAux1);
-                }catch (Exception e){
-                    System.out.println(e.getMessage());
-                }
+                System.out.println("chek :" + revisionAux.getCheks().get(0).getNombre());
+                System.out.println("chek :" + revisionAux.getCheks().get(0).isEstado());
+                //System.out.println("chek rec :" + revisionAux.getCheks().get(0).getRecomendacionList().get(0).getRecomendacion() );
+                iRevisionRepository.save(revisionAux);
+
 
 
                 System.out.println("se creo la revision");

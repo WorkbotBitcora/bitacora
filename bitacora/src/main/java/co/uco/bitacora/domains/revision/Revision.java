@@ -17,10 +17,6 @@ public class Revision {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-
-    @OneToMany
-    private List<Chek> cheks = new ArrayList<>();
-
     @OneToOne
     private Observacion observacion;
 
@@ -30,6 +26,8 @@ public class Revision {
     @OneToOne
     private Equipo Equipo;
 
+    @OneToMany
+    private List<Chek> cheks;
 
 
     @PrePersist

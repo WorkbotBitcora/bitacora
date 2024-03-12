@@ -1,10 +1,10 @@
 
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
-c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸„ì„
-i
-java:S1128"NRemove this unused import 'co.uco.bitacora.repository.IDescripcionRepository'.(ËÜÙ‹ùÿÿÿÿ
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$c7974453-a377-4db8-91b1-0c6a63a80c8a
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$92a3a7d4-a648-4411-8e87-fb409c425a4f
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$2c66563f-7d96-41df-a916-b2b5e8772e60
+‰	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸„ì„J$602950f5-c0fa-4ef4-b726-3c6ccfd3c18a
+–
+java:S1128"NRemove this unused import 'co.uco.bitacora.repository.IDescripcionRepository'.(ËÜÙ‹ùÿÿÿÿ8 Ø™¦ã1J$51bd9de4-f67b-4db0-8f69-c7d706e5f381

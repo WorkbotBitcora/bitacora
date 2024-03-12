@@ -1,6 +1,7 @@
 package co.uco.bitacora.domains.recomendacion;
 
 
+import co.uco.bitacora.domains.revision.Chek;
 import jakarta.persistence.*;
 
 @Entity
@@ -11,6 +12,9 @@ public class Recomendacion {
     private String recomendacion;
 
     private long id_chek;
+
+    @ManyToOne
+    private Chek chek;
 
     public Recomendacion() {
         this.id =1;

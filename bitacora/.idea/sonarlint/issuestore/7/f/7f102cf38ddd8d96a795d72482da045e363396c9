@@ -1,5 +1,7 @@
 
-k	java:S117T"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×Ÿ›•ûÿÿÿÿ
-k	java:S116"QRename this field "Equipo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰â­ìøÿÿÿÿ
-W
-java:S1128"ARemove this unused import 'co.uco.bitacora.services.ChekService'.(Ê±ÒÝ
+‘	java:S117R"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(×Ÿ›•ûÿÿÿÿJ$a645f2f6-a765-44a2-a322-6cbd9f0b3096
+‘	java:S116"QRename this field "Equipo" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰â­ìøÿÿÿÿJ$5f001836-9c89-42c4-96d1-6d2c2d0667cb
+„
+java:S1128"ARemove this unused import 'co.uco.bitacora.services.ChekService'.(Ê±ÒÝ8ïžßƒã1J$1ff97587-19d4-4e5c-ba47-b850f90d8c11
+s
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ïžßƒã1J$5e5a0450-e82b-4eb9-8aa7-424758742061
