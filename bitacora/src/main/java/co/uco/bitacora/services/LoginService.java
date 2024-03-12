@@ -1,12 +1,10 @@
 package co.uco.bitacora.services;
-
-import co.uco.bitacora.domains.bitacora.*;
-
 import co.uco.bitacora.domains.usuario.TipoUsuario;
 import co.uco.bitacora.domains.usuario.Usuario;
 
 import co.uco.bitacora.domains.usuario.editableUsuario;
 import co.uco.bitacora.repository.*;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +15,7 @@ import java.util.List;
 public class LoginService {
     @Autowired
     private IUsuarioRepository iUsuarioRepository;
+
     @Autowired
     private ITipoUsuarioRepository iTipoUsuarioRepository;
 
@@ -24,6 +23,7 @@ public class LoginService {
     private TipoUsuario tipoUsuarioAux = new TipoUsuario();
 
 
+    @Transactional
     public void actualizarDatosBasicos() {
         /* aqui se crea los datos estaticos de
          * tipo usuario ( 1 ó 2 y 3) ok
@@ -47,7 +47,7 @@ public class LoginService {
         iTipoUsuarioRepository.save(tipoUsuarioAux);
     }
 
-    public String AgregarUsuario(editableUsuario usde) {
+    public String agregarUsuario(editableUsuario usde) {
         try {
             //Aqui se Crea el usuario
             usuarioAux = new Usuario(usde.getNombre(), usde.getApellido(), usde.getUsuario(), usde.getContrasena(), usde.getIdTipoUsuario());
@@ -58,6 +58,7 @@ public class LoginService {
         }
     }
 
+    @Transactional
     public List<Usuario> mostrarUsuarios() {
         return iUsuarioRepository.findAll();
     }
@@ -73,6 +74,7 @@ public class LoginService {
         iUsuarioRepository.save(equ);
     }
 
+    @Transactional
     public List<Usuario> mostrarPorUsuario(long id) {
         List<Usuario> bitacorasPorUsuario = new ArrayList<>();
         for (int i = 0; i < iUsuarioRepository.findAll().size(); i++) {
@@ -86,18 +88,20 @@ public class LoginService {
     }
 
     // revisar con mas detalle
+    @Transactional
     public Usuario traerUsuarioPorID(long id) {
-        iUsuarioRepository.findById(id).ifPresent(dato -> {
-            usuarioAux = dato;
-        });
+        iUsuarioRepository.findById(id).ifPresent(dato -> usuarioAux = dato);
         return usuarioAux;
     }
 
+    @Transactional
     public List<Usuario> mostrarUsuario (){
         return iUsuarioRepository.findAll();
     }
 
+
     public void cancelarSolicitid(long id) {
         iUsuarioRepository.deleteById(id);
     }
+
 }

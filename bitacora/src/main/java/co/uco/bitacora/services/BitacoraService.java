@@ -14,7 +14,7 @@ import co.uco.bitacora.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.text.SimpleDateFormat;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -131,6 +131,7 @@ public class BitacoraService {
                 System.out.println("descripcion del usuario : " + bitacoraAUX.getDescription().getDescripcion());
                 System.out.println("ID Revision : " + bitacoraAUX.getRevision().getId());
                 System.out.println("estado : " + bitacoraAUX.getEstado().getNombre());
+
                 iBitacoraRepository.save(bitacoraAUX);
 
                 return  "La agenda Se A Guardado Con Exito ";

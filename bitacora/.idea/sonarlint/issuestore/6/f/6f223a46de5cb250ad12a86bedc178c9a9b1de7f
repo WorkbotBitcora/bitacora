@@ -1,0 +1,76 @@
+
+v
+java:S1141n"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿJ$00f2f91a-e9a1-4f42-bcda-d5d23d3e53c3
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$f455826a-d3e8-407e-9c32-b10037c62934
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$47488b3b-4d66-4da3-b957-5e5472cd0acc
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$2c973c88-33c3-40e1-9a70-680eb0b7fba5
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$3ece0d02-ea2f-43a1-8df2-ad0e24d43179
+~
+java:S6813!"BRemove this field injection and use constructor injection instead.(êæÄÞJ$1d4afd47-2043-4e89-a62c-a0bd46c771a8
+~
+java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄÞJ$f0a4485c-de01-42cb-b3d5-7856e04cae54
+~
+java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄÞJ$0b57d13b-deff-401b-a1ee-a2f76e7f1e78
+~
+java:S6813'"BRemove this field injection and use constructor injection instead.(êæÄÞJ$8cf49d52-52e1-4d0f-836c-6ebf4c25b13f
+~
+java:S6813)"BRemove this field injection and use constructor injection instead.(êæÄÞJ$521d3e32-9773-47ea-91ab-0c2c904cdb84
+~
+java:S6813+"BRemove this field injection and use constructor injection instead.(êæÄÞJ$0e5dfd6f-0e8d-4679-a970-dc0c798455b0
+~
+java:S6813-"BRemove this field injection and use constructor injection instead.(êæÄÞJ$7a09765a-37e8-4e32-80a3-aa7dc04ed9b9
+ž
+java:S14503"]Remove the "descripcionAux" field and declare it as a local variable in the relevant methods.(’ôÕìýÿÿÿÿJ$4b6f55aa-4af6-47f0-ae7b-18aea350fdc3
+™
+java:S14509"XRemove the "equipoAux" field and declare it as a local variable in the relevant methods.(–è”£ûÿÿÿÿJ$009df2c9-e38a-4e43-b842-12394085ab22
+”
+java:S1450<"XRemove the "listaChek" field and declare it as a local variable in the relevant methods.(¹º÷ÓJ$92deb78a-13b3-4f22-b54c-29a99e691d07
+™
+java:S14508"]Remove the "observacionAux" field and declare it as a local variable in the relevant methods.(”Û½ãJ$68e1e562-87cc-4869-a3c4-6552f413dfb3
+›
+java:S1450;"_Remove the "recomendacionAux" field and declare it as a local variable in the relevant methods.(áùå¸J$01807f44-fe60-47ef-af08-e89e36edbe9d
+–
+java:S14505"ZRemove the "revisionAux" field and declare it as a local variable in the relevant methods.(çûÈJ$18b106e7-30d1-448b-813b-fcccde66257f
+œ
+java:S14506"[Remove the "revisionAux1" field and declare it as a local variable in the relevant methods.(°‡üùÿÿÿÿJ$afccdcad-340f-4409-9528-2229e94fe312
+˜
+java:S1450:"\Remove the "tipoEquipoAux" field and declare it as a local variable in the relevant methods.(ËŠ’J$c8d7d120-dafa-4c26-a032-d52d7401a7b9
+ž
+java:S14504"]Remove the "tipoUsuarioAux" field and declare it as a local variable in the relevant methods.(É®˜ßÿÿÿÿÿJ$78aa9550-b415-4c7a-9cd7-d23d9095a4cb
+‰	java:S100C"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÕË„J$f1a096ac-d63c-4b80-8f59-7b2c292e3e37
+s
+java:S1135A"2Complete the task associated to this TODO comment.(ÊÊúŸÿÿÿÿÿJ$512307b3-71e4-4c7b-aa43-47c915feab5b
+h
+java:S1602J",Remove useless curly braces around statement(ëÜšÎJ$d418f9ce-d379-48b3-82ee-1dce3319be32
+f	java:S106Q"+Replace this use of System.out by a logger.(èÂ€‚J$947f3249-fa29-40a0-a1f3-038d41842857
+f	java:S106U"+Replace this use of System.out by a logger.(ÕÀª¶J$656496cc-7dd3-47eb-9cb3-83f76cad2e36
+k	java:S106V"+Replace this use of System.out by a logger.(‡”÷þÿÿÿÿJ$a5eab3d3-d8bf-4aba-b2df-b41bad1f2d96
+k	java:S106W"+Replace this use of System.out by a logger.(êþÛ¹øÿÿÿÿJ$40095f2e-5c59-40f0-b415-f6a7e1a30563
+k	java:S106Y"+Replace this use of System.out by a logger.(Ûì—çþÿÿÿÿJ$0fc604e2-f253-444c-bc1e-817cb4a07f93
+e	java:S106]"+Replace this use of System.out by a logger.(á·GJ$cc518b65-69b6-4bd2-a707-4d8b5ee07abd
+k	java:S106^"+Replace this use of System.out by a logger.(‘¨°õøÿÿÿÿJ$96970eae-4e1c-4d6e-b197-f0486d2c7be5
+k	java:S106_"+Replace this use of System.out by a logger.(”¥úÿÿÿÿJ$b9e86324-4b3e-4dff-bf3d-d7cae08fc818
+k	java:S106a"+Replace this use of System.out by a logger.(ëìÖÐûÿÿÿÿJ$d52bae88-20d5-4dae-b832-97acee78c279
+k	java:S106f"+Replace this use of System.out by a logger.(‚Õ¹ùÿÿÿÿJ$585122f6-26ad-4b1c-9767-917acca0f24a
+e	java:S106g"+Replace this use of System.out by a logger.(êèQJ$d8edf682-3609-4b8e-9a26-55f401582df4
+f	java:S106h"+Replace this use of System.out by a logger.(ð„‘ÙJ$72ebe6f6-c677-4295-930d-0a98f168debe
+k	java:S106i"+Replace this use of System.out by a logger.(ÛŒÉÑýÿÿÿÿJ$c9698db5-049f-41e8-8304-745e23dd40fe
+k	java:S106j"+Replace this use of System.out by a logger.(‹¡‹­øÿÿÿÿJ$fa477183-b142-43c6-94e8-63f50f06771d
+f	java:S106k"+Replace this use of System.out by a logger.(ÎÇµàJ$cddea918-8146-42d2-8a3e-82e87d47ab22
+k	java:S106l"+Replace this use of System.out by a logger.(£¤„ŽýÿÿÿÿJ$7ea2604e-d275-4590-8cbb-996d080497b9
+k	java:S106q"+Replace this use of System.out by a logger.(©þêÜúÿÿÿÿJ$50347bef-da92-4ebf-8dc5-040830c3f2c8
+f	java:S106u"+Replace this use of System.out by a logger.(Ä½ó¡J$2bb8982a-886f-4963-b4ef-85ea7dd945de
+f	java:S106z"+Replace this use of System.out by a logger.(çÌ¢·J$be58c917-fc81-45f1-ab5d-dd433e7635ac
+f	java:S106{"+Replace this use of System.out by a logger.(øÕê…J$12a8190f-b9ff-48e8-ab96-cc14fcb74941
+|	java:S125}"<This block of commented-out lines of code should be removed.(´ž·þýÿÿÿÿJ$b7f82bb2-880a-44c8-9891-3da54cd60739
+f	java:S106"+Replace this use of System.out by a logger.(îüŽJ$2f731819-15aa-402a-889a-4ec2167e68c1
+g	java:S106ƒ"+Replace this use of System.out by a logger.(Áí¾¥J$e36d206a-2e63-4ef6-9a18-307dee4cf89f
+}	java:S125€"<This block of commented-out lines of code should be removed.(¾ÒááýÿÿÿÿJ$f26dc5ea-69c2-46bd-b734-8b6ed304a902
+l	java:S106„"+Replace this use of System.out by a logger.(”á›±þÿÿÿÿJ$265cca8b-07cf-4f38-a00b-e46b0e2ea104
+l	java:S106…"+Replace this use of System.out by a logger.(öÞðƒüÿÿÿÿJ$4a5de2c7-043f-4807-9437-6d05c840e92c
+n
+java:S1602à",Remove useless curly braces around statement(Öó„ôþÿÿÿÿJ$0072d04b-e1eb-45c3-bdcc-95c577ab1d2e
