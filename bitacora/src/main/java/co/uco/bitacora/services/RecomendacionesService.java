@@ -153,9 +153,14 @@ public class RecomendacionesService {
 
         for (int i = 1; i < iRecomendacionRepository.findAll().size();i++){
             iRecomendacionRepository.findById((long)i).ifPresent(dato -> {
+
+
                 if (dato.getId_chek()== id){
                     respuesta.add(dato);
                 }
+
+
+
             });
         }
         return respuesta;

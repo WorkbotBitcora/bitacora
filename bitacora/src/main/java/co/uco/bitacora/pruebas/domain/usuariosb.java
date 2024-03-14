@@ -9,12 +9,17 @@ import java.util.List;
 public class usuariosb {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String nombre;
     private String apellido;
 
-    @ManyToOne
-    private sucursal sucursal;
+    @OneToOne
+    private Datasor Datasor;
+
+    @OneToOne
+    private sucursal suc;
+
     @OneToMany
     private List<banco> bancos;
 
@@ -46,19 +51,27 @@ public class usuariosb {
         this.apellido = apellido;
     }
 
-    public co.uco.bitacora.pruebas.domain.sucursal getSucursal() {
-        return sucursal;
-    }
-
-    public void setSucursal(co.uco.bitacora.pruebas.domain.sucursal sucursal) {
-        this.sucursal = sucursal;
-    }
-
     public List<banco> getBancos() {
         return bancos;
     }
 
     public void setBancos(List<banco> bancos) {
         this.bancos = bancos;
+    }
+
+    public Datasor getData() {
+        return Datasor;
+    }
+
+    public void setData(Datasor Datasor) {
+        this.Datasor = Datasor;
+    }
+
+    public sucursal getSuc() {
+        return suc;
+    }
+
+    public void setSuc(sucursal suc) {
+        this.suc = suc;
     }
 }

@@ -1,18 +1,24 @@
 package co.uco.bitacora.pruebas.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "SucursalesP")
 public class sucursal {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String nombre ;
     private String direccion;
 
     public sucursal() {
+        this.nombre="emilio";
+        this.direccion="ni idea";
+    }
+
+    public sucursal(String nombre, String direccion) {
+        this.nombre = nombre;
+        this.direccion = direccion;
     }
 
     public long getId() {

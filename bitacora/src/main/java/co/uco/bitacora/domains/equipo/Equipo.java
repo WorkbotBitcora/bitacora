@@ -15,6 +15,7 @@ public class Equipo {
     private String marca;
 
     public Equipo() {
+        this.id=1;
         this.marca="No Hay Marca";
         this.tipoEquipo = new TipoEquipo();
     }

@@ -1,0 +1,13 @@
+
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$36e8b812-5ee7-4bb6-acd6-6e92e2fc8824
+
+java:S1450"SRemove the "data" field and declare it as a local variable in the relevant methods.(àÁá´J$f595bf0b-1c1f-43a9-be39-0ffa49c02700
+	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÒÑ€şÿÿÿÿJ$3c267672-8173-47e3-bf7f-6e1b80a64e18
+l	java:S106’"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿJ$e37f767c-9d7c-489d-a79e-358410b8555b
+Š
+java:S1128"IRemove this unused import 'co.uco.bitacora.domains.bitacora.Descripcion'.(…®²‘ûÿÿÿÿJ$673092ea-362b-484c-8fc8-8819464adb33
+ƒ
+java:S1128"BRemove this unused import 'co.uco.bitacora.domains.revision.Chek'.(›×’ÈùÿÿÿÿJ$33101a91-b636-43d0-97fa-d1b778661bf8
+
+java:S1128"NRemove this unused import 'co.uco.bitacora.repository.IDescripcionRepository'.(ËÜÙ‹ùÿÿÿÿJ$01f24a96-216b-4f87-91f0-ed94b1c21638

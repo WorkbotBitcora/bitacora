@@ -44,20 +44,19 @@ public class BitacoraService {
     private IEstadoRepository iEstadoRepository;
     @Autowired
     private ChekService chekService;
-
+    @Autowired
+    private RevisionService revisionService = new RevisionService() ;
 
     private Bitacora bitacoraAUX = new Bitacora();
     private Usuario usuarioAux = new Usuario();
     private Descripcion descripcionAux =new Descripcion();
     private TipoUsuario tipoUsuarioAux = new TipoUsuario();
     private Revision revisionAux = new Revision();
-    private Revision revisionAux1 = new Revision();
     private Estado estadoAux = new Estado();
     private Observacion observacionAux = new Observacion();
     private Equipo equipoAux = new Equipo();
     private TipoEquipo tipoEquipoAux = new TipoEquipo();
     private Recomendacion recomendacionAux = new Recomendacion();
-    private List<Chek> listaChek = new ArrayList<>();
 
 
 
@@ -96,12 +95,12 @@ public class BitacoraService {
                 iEquipoRepository.save(equipoAux);
                 System.out.println("se creo el equipo");
 
-                listaChek = chekService.obtenerChecksPorId(equipoAux.getId());
 
 
 
                 //aqui se crea la revisiones
-                revisionAux = new Revision(observacionAux,equipoAux, listaChek);
+                revisionAux = new Revision(observacionAux,equipoAux,chekService.obtenerChecksPorId(equipoAux.getTipoEquipo().getId()));
+
                 System.out.println("id : " + revisionAux.getId());
                 System.out.println("lista contiene algo : " + revisionAux.getCheks().isEmpty());
                 System.out.println("equipo marca desde revision : " + revisionAux.getEquipo().getMarca());
@@ -109,17 +108,17 @@ public class BitacoraService {
                 System.out.println("chek :" + revisionAux.getCheks().get(0).getNombre());
                 System.out.println("chek :" + revisionAux.getCheks().get(0).isEstado());
                 //System.out.println("chek rec :" + revisionAux.getCheks().get(0).getRecomendacionList().get(0).getRecomendacion() );
-                iRevisionRepository.save(revisionAux);
-
-
-
-                System.out.println("se creo la revision");
-
 
                 //Aqui se Crea el Estado
                 estadoAux = new Estado();
                 System.out.println(estadoAux.getNombre());
                 System.out.println("se creo el estado ");
+
+                revisionService.guardarRevision(revisionAux);
+                System.out.println("se creo la revision");
+
+
+
 
                 //Aqui SE crea una bitacora Con el tipo usuario usuario y el id de la descripcion tipo long;
                 bitacoraAUX = new Bitacora(usuarioAux,descripcionAux,revisionAux ,estadoAux);
