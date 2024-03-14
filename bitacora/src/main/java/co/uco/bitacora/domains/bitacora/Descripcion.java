@@ -16,7 +16,6 @@ public class Descripcion {
     }
 
     public Descripcion(String descripcion) {
-        this.id=1;
         this.descripcion = descripcion;
     }
 

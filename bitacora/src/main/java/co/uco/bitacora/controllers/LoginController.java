@@ -1,38 +1,48 @@
 package co.uco.bitacora.controllers;
-
-import co.uco.bitacora.domains.equipo.editableEquipo;
-import co.uco.bitacora.domains.usuario.userDescription;
-import co.uco.bitacora.services.BitacoraService;
+import co.uco.bitacora.domains.usuario.Usuario;
+import co.uco.bitacora.domains.usuario.editableUsuario;
+import co.uco.bitacora.services.LoginService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/procesador/bitacora/v2/login")
 public class LoginController {
+
+    @Autowired
     private LoginService loginService=new LoginService();
 
-    @GetMapping("/cargarDB")
-    public void llenardata(){
+    @PostMapping ("/cargarDB")
+    public String  llenardata(){
         loginService.actualizarDatosBasicos();
+        return  null;
     }
 
-    public ResponseEntity<?> mostrarUsuario() {
+    @GetMapping("/usuario")
+    public ResponseEntity<List<Usuario>> mostrarUsuario() {
         return ResponseEntity.ok(loginService.mostrarUsuario());
     }
 
-    @PatchMapping( value = "/usuario/{id}")
+    @PatchMapping( value = "/usuario")
     @ResponseStatus(HttpStatus.ACCEPTED)
-    public void actualizarUsuario (@PathVariable long id , @RequestBody Usuario dato){
-        loginService.editarUsuario(id,dato);
+    public void actualizarUsuario (@RequestBody editableUsuario dato){
+        loginService.editarUsuario(dato);
     }
-    @PostMapping("/nuevoUsuario")
+
+
+    @PostMapping("/usuario")
     @ResponseStatus(HttpStatus.CREATED)
-    public void ingresarUsuario(@RequestBody Usuario usde){
-        loginService.AgregarUsuario(usde);
+    public String ingresarUsuario(@RequestBody editableUsuario usde){
+        return loginService.agregarUsuario(usde);
     }
+
+
     @GetMapping("/usuario/{id}")
-    public ResponseEntity<?> mostarPorUsuario(@PathVariable long id) {
+    public ResponseEntity<List<Usuario>> mostarPorUsuario(@PathVariable long id) {
         return ResponseEntity.ok(loginService.mostrarPorUsuario(id));
     }
 

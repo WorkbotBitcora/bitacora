@@ -29,9 +29,9 @@ public class registrosService {
     }//ok
 
 
-    public void crearResgistro(userDescription usde){
+/*    public void crearResgistro(userDescription usde){
         reg.crearRegistro(new editableUsuario(usde.getIdUser(),usde.getNombre(),usde.getIdTipouser()),new Descripcion(usde.getIdDesc(),usde.getDesc()));
-    }// ok
+    }// ok*/
 
     public List<Bitacora> mostrarPorUsuario(long id){
 

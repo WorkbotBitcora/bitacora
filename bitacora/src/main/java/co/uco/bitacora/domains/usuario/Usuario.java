@@ -8,14 +8,18 @@ import jakarta.persistence.*;
 public class Usuario {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
 
     private String nombre;
     private String apellido;
+
+    @Column(nullable = false, unique = true)
     private String usuario;
     private String contrasena;
-    @OneToOne
+
+    @ManyToOne
     private TipoUsuario tipoUsuario;
 
 
@@ -28,9 +32,17 @@ public class Usuario {
     }
 
     public Usuario(String nombre, TipoUsuario tipoUsuario) {
-        this.id = 1;
         this.nombre = nombre;
         this.tipoUsuario = tipoUsuario;
+
+    }
+
+    public Usuario(String nombre, String apellido, String usuario, String contrasena, long tipoUsuario) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.usuario = usuario;
+        this.contrasena = contrasena;
+        this.tipoUsuario= new TipoUsuario(tipoUsuario);
     }
 
     public Usuario(long id, String nombre, String apellido, String usuario, String contrasena, TipoUsuario tipoUsuario) {
@@ -43,6 +55,7 @@ public class Usuario {
     }
 
     public Usuario() {
+
     }
 
 

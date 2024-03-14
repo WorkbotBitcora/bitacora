@@ -5,8 +5,8 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "Estados")
 public class Estado {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id ;
     private String nombre;
 

@@ -1,5 +1,6 @@
 package co.uco.bitacora.domains.bitacora;
 
+import co.uco.bitacora.domains.revision.Revision;
 import co.uco.bitacora.domains.usuario.Usuario;
 import jakarta.persistence.*;
 
@@ -14,19 +15,19 @@ public class Bitacora {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private  long id;
 
-    @OneToOne
+    @ManyToOne
     private Usuario usuario;
 
     @Temporal(TemporalType.DATE)
     private Date fechaEntrada;
 
-    @OneToOne
+    @ManyToOne
     private Descripcion descripcion;
 
-    @OneToOne
+    @ManyToOne
     private Revision Revision;
 
-    @OneToOne
+    @ManyToOne
     private Estado Estado;
 
     @PrePersist

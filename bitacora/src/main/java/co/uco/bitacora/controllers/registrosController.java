@@ -35,11 +35,15 @@ public class registrosController {
         servicio.editarEquipo(id,dato);
     }
 
+   /*
     @PostMapping("/registro")
     @ResponseStatus(HttpStatus.CREATED)
     public void ingreasarRegistro(@RequestBody userDescription usde){
         servicio.crearResgistro(usde);
     }
+    */
+
+
     @GetMapping("/usuario/{id}")
     public ResponseEntity<?> mostarPorUsuario(@PathVariable long id) {
         return ResponseEntity.ok(servicio.mostrarPorUsuario(id));
