@@ -11,20 +11,9 @@ import java.util.List;
 public class ChekService {
     @Autowired
     private  IChekRepository iChekRepository;
-
-    @Autowired
-    private static IChekRepository iChekRepository1;
-
     @Autowired
     private RecomendacionesService servicioRecomendaciones;
-
-
     private Chek chek= new Chek();
-
-    private static Chek chek1= new Chek();
-
-
-    // aqui va el tema de los cheks
 
     // Método para obtener los checks de un portátil
     public String CargarChek(){
@@ -121,47 +110,4 @@ public class ChekService {
         };
     }
 
-    public static List<Chek> obtenerChecksPorStaticId(long id) {
-        List<Chek> checks = new ArrayList<>();
-        return switch ((int) id) {
-            case 2 -> {
-                for (int i = 23; i < 31; i++) {
-
-                    iChekRepository1.findById((long) i).ifPresent(dato -> {
-                        chek1.setId(dato.getId());
-                        chek1.setNombre(dato.getNombre());
-                        chek1.setEstado(dato.isEstado());
-                        chek1.setRecomendacionList(dato.getRecomendacionList());
-                    });
-                    checks.add(chek1);
-                }
-                yield checks;
-            }
-            case 3 -> {
-                for (int i = 1; i < 13; i++) {
-                    iChekRepository1.findById((long) i).ifPresent(dato -> {
-                        chek1.setId(dato.getId());
-                        chek1.setNombre(dato.getNombre());
-                        chek1.setEstado(dato.isEstado());
-                        chek1.setRecomendacionList(dato.getRecomendacionList());
-                    });
-                    checks.add(chek1);
-                }
-                yield checks;
-            }
-            case 4 -> {
-                for (int i = 13; i < 23; i++) {
-                    iChekRepository1.findById((long) i).ifPresent(dato -> {
-                        chek1.setId(dato.getId());
-                        chek1.setNombre(dato.getNombre());
-                        chek1.setEstado(dato.isEstado());
-                        chek1.setRecomendacionList(dato.getRecomendacionList());
-                    });
-                    checks.add(chek1);
-                }
-                yield checks;
-            }
-            default -> checks;
-        };
-    }
 }

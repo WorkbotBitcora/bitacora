@@ -151,16 +151,11 @@ public class RecomendacionesService {
     public  List<Recomendacion> listarRecomendacionesPorID(long id){
         List<Recomendacion> respuesta = new ArrayList<>();
 
-        for (int i = 1; i < iRecomendacionRepository.findAll().size();i++){
+        for (int i = 0; i <= iRecomendacionRepository.findAll().size();i++){
             iRecomendacionRepository.findById((long)i).ifPresent(dato -> {
-
-
-                if (dato.getId_chek()== id){
+                if (dato.getId_chek() == id){
                     respuesta.add(dato);
                 }
-
-
-
             });
         }
         return respuesta;

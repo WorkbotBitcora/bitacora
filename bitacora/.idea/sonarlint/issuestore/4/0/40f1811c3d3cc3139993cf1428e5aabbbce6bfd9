@@ -1,6 +1,12 @@
 
+Ä
+java:S11868"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(šÒËŒ8±Ø«ä1J$cd4e51bb-d377-4414-9f57-777ac78e0f11
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õ¸¶Òã1J$4d42e239-9478-4110-9508-ff28c18ae77c
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8‚±Ø«ä1J$1654b6c8-a09b-4fb0-8e7f-df2e768dc173
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ö¸¶Òã1J$5ee2697e-4500-4580-aa5c-9fc4693e4c5d
-m	java:S106"+Replace this use of System.out by a logger.(ª›üâ8û¸¶Òã1J$a1aefe10-446d-4a75-ad89-d76ac6d6fcf1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8‚±Ø«ä1J$30f6566a-0094-4c18-9504-901f98d39abc
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8‚±Ø«ä1J$88aa8285-7dca-418a-9cbf-c681618db761
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8‚±Ø«ä1J$614e931f-23c4-4cd4-b3ce-59c91be66e78
+m	java:S106+"+Replace this use of System.out by a logger.(äìÎÆ8†±Ø«ä1J$d166b0ac-418a-4e7d-8ce3-cc2f432dbf78
