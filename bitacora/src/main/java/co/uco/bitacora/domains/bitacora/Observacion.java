@@ -19,6 +19,7 @@ public class Observacion {
     private String mejora;
 
     public Observacion() {
+        this.id= 1;
         this.descripcion = "vacio";
         this.mejora="vacio";
     }

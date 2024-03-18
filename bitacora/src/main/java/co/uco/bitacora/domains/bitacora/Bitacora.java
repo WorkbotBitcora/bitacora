@@ -1,6 +1,5 @@
 package co.uco.bitacora.domains.bitacora;
 
-import co.uco.bitacora.domains.revision.Revision;
 import co.uco.bitacora.domains.usuario.Usuario;
 import jakarta.persistence.*;
 
@@ -25,7 +24,7 @@ public class Bitacora {
     private Descripcion descripcion;
 
     @ManyToOne
-    private Revision Revision;
+    private co.uco.bitacora.domains.revision.Revision Revision;
 
     @ManyToOne
     private Estado Estado;
@@ -39,7 +38,7 @@ public class Bitacora {
     }
 
 
-    public Bitacora(Usuario usuario, Descripcion descripcion , Revision revision , Estado estado ) {
+    public Bitacora(Usuario usuario, Descripcion descripcion , co.uco.bitacora.domains.revision.Revision revision , Estado estado ) {
         this.usuario = usuario;
         this.descripcion = descripcion;
         this.Revision=revision;
@@ -78,11 +77,11 @@ public class Bitacora {
         this.descripcion = descriptionID;
     }
 
-    public Revision getRevision() {
+    public co.uco.bitacora.domains.revision.Revision getRevision() {
         return Revision;
     }
 
-    public void setRevision(Revision revisionID) {
+    public void setRevision(co.uco.bitacora.domains.revision.Revision revisionID) {
         this.Revision = revisionID;
     }
 

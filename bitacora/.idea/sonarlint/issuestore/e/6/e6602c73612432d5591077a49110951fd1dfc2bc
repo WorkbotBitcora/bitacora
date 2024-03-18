@@ -1,8 +1,6 @@
 
-s	java:S116"^Rename this field "ServiciosDeBitacora" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü£ˆ¢
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
-<
-java:S1452 "&Remove usage of generic wildcard type.(Žá°€
-<
-java:S14521"&Remove usage of generic wildcard type.(Æ”ò¬
+ 	java:S116"^Rename this field "ServiciosDeBitacora" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü£ˆ¢8žê¯«ä1J$3692f036-3293-4c06-807e-7b97a687b754
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Ÿê¯«ä1J$d0d82fb6-0ec5-4918-b572-71791e2dea8f
+i
+java:S14524"&Remove usage of generic wildcard type.(Æ”ò¬8¦ê¯«ä1J$fbd872ee-1209-455d-97ef-5c8306609c51

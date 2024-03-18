@@ -2,33 +2,30 @@ package co.uco.bitacora.domains.revision;
 
 import co.uco.bitacora.domains.bitacora.Observacion;
 import co.uco.bitacora.domains.equipo.Equipo;
-import co.uco.bitacora.services.ChekService;
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 @Entity
-@Table(name = "Revisiones")
+@Table(name = "comprobaciones")
 public class Revision {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @OneToOne
-    private Observacion observacion;
-
     @Temporal(TemporalType.DATE)
     private Date fechaFinal;
 
-    @OneToOne
-    private Equipo Equipo;
+    @OneToOne(cascade = CascadeType.PERSIST)
+    private Observacion observacion;
 
-    @OneToMany
-    private List<Chek> cheks;
+    @OneToOne(cascade = CascadeType.PERSIST)
+    private Equipo equipo;
 
+    @OneToMany(cascade = CascadeType.PERSIST)
+    private List<Chek> chekList;
 
     @PrePersist
     protected void onCreate(){
@@ -39,16 +36,15 @@ public class Revision {
         fechaFinal = new Date();
     }
 
+
+
     public Revision() {
-        this.id=1;
-        this.observacion = new Observacion();
-        this.Equipo = new Equipo();
     }
 
-    public Revision(Observacion observacion, Equipo equipo, List<Chek> listaDeChek) {
+    public Revision(Observacion observacion, Equipo equipo , List<Chek> chekList) {
         this.observacion = observacion;
-        Equipo = equipo;
-        this.cheks = listaDeChek;
+        this.equipo = equipo;
+        this.chekList = chekList;
     }
 
     public long getId() {
@@ -59,6 +55,14 @@ public class Revision {
         this.id = id;
     }
 
+    public Date getFechaFinal() {
+        return fechaFinal;
+    }
+
+    public void setFechaFinal(Date fechaFinal) {
+        this.fechaFinal = fechaFinal;
+    }
+
     public Observacion getObservacion() {
         return observacion;
     }
@@ -67,27 +71,19 @@ public class Revision {
         this.observacion = observacion;
     }
 
-    public Date getFechaFinal() {
-        return fechaFinal;
-    }
-
-    public void setFechaFinal(Date fecha) {
-        this.fechaFinal = fecha;
-    }
-
     public Equipo getEquipo() {
-        return Equipo;
+        return equipo;
     }
 
-    public void setEquipo(Equipo Equipo) {
-        this.Equipo = Equipo;
+    public void setEquipo(Equipo equipo) {
+        this.equipo = equipo;
     }
 
-    public List<Chek> getCheks() {
-        return cheks;
+    public List<Chek> getChekList() {
+        return chekList;
     }
 
-    public void setCheks(List<Chek> cheks) {
-        this.cheks = cheks;
+    public void setChekList(List<Chek> chekList) {
+        this.chekList = chekList;
     }
 }

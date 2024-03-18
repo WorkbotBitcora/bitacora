@@ -15,10 +15,8 @@ public class Chek {
     private String nombre;
     private boolean estado;
 
-    @ManyToOne
-    private Revision revision;
-    @OneToMany
-    private List<Recomendacion> recomendacionList = new ArrayList<>();
+    @ManyToMany
+    private List<Recomendacion> recomendacionList;
 
     public Chek(long id, String nombre, boolean estado, List<Recomendacion> RecomendacionesRespectivas) {
         this.id = id;
@@ -31,7 +29,7 @@ public class Chek {
     public Chek() {
         this.nombre = "vacio";
         this.estado = true;
-        this.recomendacionList.add(new Recomendacion());
+        //this.recomendacionList.add(new Recomendacion());
     }
 
     public long getId() {

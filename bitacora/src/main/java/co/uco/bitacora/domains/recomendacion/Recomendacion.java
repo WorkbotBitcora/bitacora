@@ -13,8 +13,6 @@ public class Recomendacion {
 
     private long id_chek;
 
-    @ManyToOne
-    private Chek chek;
 
     public Recomendacion() {
         this.id =1;

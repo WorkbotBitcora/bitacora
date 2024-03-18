@@ -1,6 +1,2 @@
 
-i	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÚŞÙ¤8ÆÓÎ¦ã1
-L
-java:S1068"*Remove this unused "nombre" private field.(µÿï„ùÿÿÿÿ8ËÓÎ¦ã1
-O
-java:S1068"-Remove this unused "direccion" private field.(“’’öÿÿÿÿÿ8ËÓÎ¦ã1
+	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÚŞÙ¤8Î¶‘Ğã1J$81590edd-6fb5-40a3-b28a-81ae987b47e5

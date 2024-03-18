@@ -18,7 +18,7 @@ public class ChekController {
         return chekService.CargarChek();
     }
 
-    @GetMapping("/cheks/{tipo}")
+    @GetMapping("/cheks/{tipo}")// no funciona
     public List<?> obtenerChecksPorTipo(@PathVariable long tipo) {
         return chekService.obtenerChecksPorId(tipo);
     }

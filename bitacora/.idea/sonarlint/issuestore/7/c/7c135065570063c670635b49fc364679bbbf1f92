@@ -1,4 +1,7 @@
 
-˜	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šöâçùÿÿÿÿ8şëƒã1J$19b02efb-8e41-48fd-b8be-059000e44728
+˜	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šöâçùÿÿÿÿ8şëƒã1J$3abd08a5-cbb9-4b2e-bc1c-40c4e15c1e7b
+ƒ	java:S125 "<This block of commented-out lines of code should be removed.(É¢Ú‡şÿÿÿÿ8Ş‹»ªä1J$87a5a783-a3d3-44d7-b3a3-1185c4748971
 
-java:S1128"LRemove this unused import 'co.uco.bitacora.services.RecomendacionesService'.(¾µ¯Ã8æ¸‘ƒã1J$750dd3ae-574d-4bbc-b7eb-586f2486ad40
+java:S1128"LRemove this unused import 'co.uco.bitacora.services.RecomendacionesService'.(¾µ¯Ã8æ¸‘ƒã1J$601ed0f1-66e6-4ed2-a067-b57ba680d384
+s
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ûÈµªä1J$21f1832a-34cc-4f2d-a13a-1cbfe6e9224c

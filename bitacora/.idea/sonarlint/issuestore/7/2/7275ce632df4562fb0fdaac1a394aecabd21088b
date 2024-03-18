@@ -1,8 +1,10 @@
 
-‘	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛŞ»æşÿÿÿÿJ$3a94acad-b1b5-4a8e-b6e5-8f8396d20878
-Œ	java:S1173"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûãı§J$58c6ee1a-a508-47d9-a623-d83b9e585e29
+‘	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛŞ»æşÿÿÿÿJ$427dd23f-c91b-4dcb-84a0-8d5830edcf1d
+“	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûãı§8Ü¶çªä1J$b0a41442-cea1-405e-b36a-92a5aaf8ee75
 W
-java:S1700"Rename field "recomendacion"(´ÚÙ:J$5cc66006-d0b5-411f-80bf-c4cd845b6f8c
-	java:S116"RRename this field "id_chek" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(  J$531ccd67-487b-451d-9a17-6740d40cf474
-	java:S100/"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”óû—üÿÿÿÿJ$d6891708-8b6b-4b4a-ae95-b60061456ea7
-‰	java:S1003"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûãı§J$270e94bd-3bcd-4ceb-b30d-584c3bcd7055
+java:S1700"Rename field "recomendacion"(´ÚÙ:J$db6c996c-b136-4e7e-a0e9-6075ba816474
+”	java:S116"RRename this field "id_chek" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(  8Ëçªä1J$72a1080d-3e2c-414c-8568-f4145203fcf5
+•	java:S100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”óû—üÿÿÿÿ8á¶çªä1J$27bdd525-bdb2-4732-adf3-76f8b0035988
+	java:S1001"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûãı§8á¶çªä1J$0424f791-ab0a-4d18-acbd-7e2365426495
+Š
+java:S1128"BRemove this unused import 'co.uco.bitacora.domains.revision.Chek'.(›×’Èùÿÿÿÿ8‘Ëçªä1J$49612452-ab97-489e-b8e4-75725b5ea4ce
