@@ -8,6 +8,7 @@ import jakarta.persistence.*;
 @Table(name = "Recomendaciones")
 public class Recomendacion {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String recomendacion;
 

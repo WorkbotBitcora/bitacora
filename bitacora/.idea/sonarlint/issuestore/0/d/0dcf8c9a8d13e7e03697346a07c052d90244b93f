@@ -1,5 +1,5 @@
 
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$b9febf93-33b8-40f2-bfce-4ec591ec56e7
-g
-java:S1452"&Remove usage of generic wildcard type.(µŞİæÿÿÿÿÿJ$c7492c84-3c64-4076-9b4f-7dcb80b7e677
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¾õŸğä1J$f52f9638-6477-4e77-b431-27f2423ca45c
+c
+java:S1128"FRemove this unused import 'org.hibernate.annotations.DialectOverride'.(ÈĞ†8ğšŸóä1

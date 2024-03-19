@@ -1,0 +1,7 @@
+
+
+java:S1128"FRemove this unused import 'co.uco.bitacora.domains.equipo.TipoEquipo'.(éËïµùÿÿÿÿ8½ëä¢å1J$e3622db3-7db1-4e24-9457-7d731fd0901f
+
+java:S1128"JRemove this unused import 'org.springframework.data.annotation.CreatedBy'.(ØÚßâ8½ëä¢å1J$e145853b-ad31-4fb0-9a31-473787b5cb32
+–
+java:S1128"NRemove this unused import 'org.springframework.data.jpa.repository.Modifying'.(—·Ñ”şÿÿÿÿ8½ëä¢å1J$b51c0c60-2829-49bb-8bc7-1b66a2ded051

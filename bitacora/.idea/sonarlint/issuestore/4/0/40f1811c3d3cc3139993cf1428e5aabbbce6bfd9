@@ -1,12 +1,17 @@
 
-Ä
-java:S11868"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(šÒËŒ8±Ø«ä1J$cd4e51bb-d377-4414-9f57-777ac78e0f11
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8‚±Ø«ä1J$1654b6c8-a09b-4fb0-8e7f-df2e768dc173
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ªä”öä1J$ce9e0076-57d4-4e62-a8a4-84d050713692
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8‚±Ø«ä1J$30f6566a-0094-4c18-9504-901f98d39abc
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8«ä”öä1J$65074510-146d-4995-a0be-3ae773a1f8d2
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8‚±Ø«ä1J$88aa8285-7dca-418a-9cbf-c681618db761
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8«ä”öä1J$fa1fcbce-137b-49dd-ab14-8ac85706fa1d
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8‚±Ø«ä1J$614e931f-23c4-4cd4-b3ce-59c91be66e78
-m	java:S106+"+Replace this use of System.out by a logger.(äìÎÆ8†±Ø«ä1J$d166b0ac-418a-4e7d-8ce3-cc2f432dbf78
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8«ä”öä1J$811287a7-952f-4a77-8949-d2c1c254ec64
+l	java:S106)"+Replace this use of System.out by a logger.(ìà¨V8®ä”öä1J$aa9ce950-4636-49a6-8f08-58f23c1a8653
+r	java:S106*"+Replace this use of System.out by a logger.(Ê¢¤ßúÿÿÿÿ8®ä”öä1J$a2b30c9b-bcfe-4848-88fa-d34ba9b5296b
+m	java:S106+"+Replace this use of System.out by a logger.(œ”¬8®ä”öä1J$a7eb71e1-49f4-4a58-8716-eb97271d9f3b
+m	java:S1060"+Replace this use of System.out by a logger.(äìÎÆ8¯ä”öä1J$1545db13-70d3-407f-86ff-99ccd896e838
+d
+java:S1128"BRemove this unused import 'co.uco.bitacora.domains.revision.Chek'.(›×’Èùÿÿÿÿ8Âüœ¡å1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Âüœ¡å1

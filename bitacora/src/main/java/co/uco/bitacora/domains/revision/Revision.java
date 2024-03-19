@@ -24,7 +24,7 @@ public class Revision {
     @OneToOne(cascade = CascadeType.PERSIST)
     private Equipo equipo;
 
-    @OneToMany(cascade = CascadeType.PERSIST)
+    @ManyToMany (cascade = CascadeType.PERSIST)
     private List<Chek> chekList;
 
     @PrePersist

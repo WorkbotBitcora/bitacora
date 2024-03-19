@@ -3,12 +3,13 @@ package co.uco.bitacora.services;
 import co.uco.bitacora.domains.bitacora.*;
 import co.uco.bitacora.domains.equipo.Equipo;
 import co.uco.bitacora.domains.equipo.TipoEquipo;
-import co.uco.bitacora.domains.equipo.editableEquipo;
+import co.uco.bitacora.domains.objetosAuxiliares.DatosEquipo;
 import co.uco.bitacora.domains.recomendacion.Recomendacion;
 import co.uco.bitacora.domains.usuario.TipoUsuario;
 import co.uco.bitacora.domains.usuario.Usuario;
 import co.uco.bitacora.domains.usuario.userDescription;
 import co.uco.bitacora.repository.*;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -35,9 +36,9 @@ public class BitacoraService {
     @Autowired
     private IRecomendacionRepository iRecomendacionRepository;
     @Autowired
-    private IEstadoRepository iEstadoRepository;
+    private IRevisionRepository iRevisionRepository;
     @Autowired
-    private ChekService chekService;
+    private IEstadoRepository iEstadoRepository;
     @Autowired
     private RevisionService revisionService = new RevisionService() ;
 
@@ -75,7 +76,7 @@ public class BitacoraService {
                 return  "La agenda Se A Guardado Con Exito ";
 
             }catch (Exception e ){
-                return e.getMessage();
+                return "salio un error" + e.getMessage();
             }
         }
     }
@@ -135,13 +136,29 @@ public class BitacoraService {
         return iBitacoraRepository.findAll();
     }
 
+    @Transactional
+    public String editarEquipo(long idRevision, DatosEquipo actualizacion){
+        try {
+            Equipo equipo = new Equipo();
+            iRevisionRepository.findById(idRevision).ifPresent(dato->{
+                equipo.setId(dato.getEquipo().getId());
+            });
 
-    public void editarEquipo(long id , editableEquipo dato){
-        Equipo equ = new Equipo();
-        equ.setId(id);
-        equ.setMarca(dato.getMarca());
-        equ.setTipoEquipo(dato.getTipoEquipo());
-        iEquipoRepository.save(equ);
+            // Validación de parámetros
+            if (equipo.getId() <= 0) {
+                throw new IllegalArgumentException("El ID del equipo debe ser mayor a 0");
+            }
+
+            if (actualizacion == null) {
+                throw new IllegalArgumentException("La información de actualización no puede ser nula");
+            }
+            System.out.println("trata de hacer el cambio");
+            iEquipoRepository.modificarMarcaYTipoPorId(actualizacion.getMarca(),new TipoEquipo(actualizacion.getTipoEquipo()),equipo.getId());
+            return  "Se Guardaron los cambios";
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            return "no se actualizo";
+        }
     }
 
 

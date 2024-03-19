@@ -1,18 +1,0 @@
-
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÙèÂÑã1J$e5a2bece-fa18-44f3-8d6a-1877dad1aed8
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÙèÂÑã1J$85ff0353-f7a4-45c4-bb9e-14488c039b10
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÙèÂÑã1J$e1608132-886b-4bf2-a049-76fee39bb1d9
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÙèÂÑã1J$c822904d-b1ef-4e6f-a101-23375b465fd6
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÙèÂÑã1J$57e3f30e-99bd-4f33-9fc3-f52f4d6ba1b6
-r	java:S1068"+Replace this use of System.out by a logger.(­ûªåşÿÿÿÿ8İèÂÑã1J$714d7394-fe90-43b5-95a2-387e917e7587
-r	java:S1069"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ŞèÂÑã1J$ca8ab0fd-1729-458e-bec0-c8c206de2a50
-m	java:S106H"+Replace this use of System.out by a logger.(ôãìè8ßèÂÑã1J$461c9678-895d-4e26-aca1-e1337be3b65e
-r	java:S106I"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ßèÂÑã1J$05a159b3-b6a7-4da4-b0dd-b8b7e2ef0fbc
-	java:S100O"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õÿ§@8ßèÂÑã1J$521c1d91-ada2-4e2d-b8a0-4b59fa91e0b3
-q
-java:S1068")Remove this unused "banco" private field.(ÌÖöñûÿÿÿÿ8âèÂÑã1J$377e1218-92c0-481e-a78e-b32d328706c4

@@ -5,6 +5,7 @@ import co.uco.bitacora.domains.recomendacion.Recomendacion;
 import co.uco.bitacora.domains.revision.Chek;
 import co.uco.bitacora.repository.IDescripcionRepository;
 import co.uco.bitacora.repository.IRecomendacionRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@Transactional
 public class RecomendacionesService {
 
     @Autowired
@@ -22,6 +24,7 @@ public class RecomendacionesService {
     // aqui van las recomendacioens tienes que crear el objeto recomendaciones y guardarlo en la DB
     // un ejemplo es el metodo actualizarDatosBasicos() de bitacora service
 
+    @Transactional
     public  void CargarRecomendaciones(){
         try {
             // portatil
@@ -142,12 +145,16 @@ public class RecomendacionesService {
 
             data="Realiza regularmente copias de seguridad de tus datos importantes para evitar la pérdida de información en caso de problemas con el software.";
             iRecomendacionRepository.save(new Recomendacion(38,data,30));
+
+            data="No hay Recomendaciones";
+            iRecomendacionRepository.save(new Recomendacion(39,data,31));
         }catch (Exception e){
             System.out.println(e.getMessage() );
         }
     }
 
 
+    @Transactional
     public  List<Recomendacion> listarRecomendacionesPorID(long id){
         List<Recomendacion> respuesta = new ArrayList<>();
 

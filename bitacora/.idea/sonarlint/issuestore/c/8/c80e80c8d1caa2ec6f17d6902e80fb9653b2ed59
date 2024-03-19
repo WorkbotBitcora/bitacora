@@ -1,6 +1,21 @@
 
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$8b8157c0-2ada-4f37-a4fc-4704227fc5ec
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$5f939a76-8a4f-422d-addf-74e50dcb451f
-‰	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸„ì„J$58e2c305-813f-4056-aeff-a5cce405b23f
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìœØ£å1J$b6f9ae8c-bdb7-4955-9f86-aaf902931390
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìœØ£å1J$41496b7a-60c3-49e0-9d22-45191ffd7d3f
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìœØ£å1J$2205a6a0-6019-4c6c-af5e-53a2e6596330
+	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸„ì„8ïœØ£å1J$9c0ba265-7e3f-4ad2-87fa-e3adaee496bb
+m	java:S106X"+Replace this use of System.out by a logger.(ªè‹ş8õœØ£å1J$ce4dc7e4-2a48-495d-ae04-4f5c8d3e7806
+n
+java:S1602[",Remove useless curly braces around statement(›ş‚8öœØ£å1J$f0b779a0-c2c5-40be-8b98-b9486ca23334
+ˆ
+java:S1612["FReplace this lambda with method reference 'listaDeCheksAGuradar::add'.(›ş‚8öœØ£å1J$b05fa27e-9260-4199-a81a-4f7825e0b10d
+m	java:S106e"+Replace this use of System.out by a logger.(‡¨¼Á8÷œØ£å1J$1acf5f05-c3d7-4831-ac97-e5813d817b8e
+r	java:S106i"+Replace this use of System.out by a logger.(ˆî€úúÿÿÿÿ8øœØ£å1J$09919487-38b4-44ce-9709-5a28f1d82772
+m	java:S106m"+Replace this use of System.out by a logger.(õÎòš8øœØ£å1J$d47c387f-6cee-4f89-9c2e-373b1bfd8038
+r	java:S106o"+Replace this use of System.out by a logger.(‡‚ÎÎıÿÿÿÿ8›íã£å1J$3a7294e7-f3fe-4370-ac15-cba42e1eaec0
+r	java:S106q"+Replace this use of System.out by a logger.(ÅµáÊùÿÿÿÿ8›íã£å1J$f250cab5-9f65-4ec4-8d38-1300b65d01b2
+r	java:S106~"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8œíã£å1J$d9665b70-26e5-455c-a1cb-2efeea1746bb
+
+java:S1128	"FRemove this unused import 'org.springframework.data.history.Revision'.(èÑì¯ÿÿÿÿÿ8şİÙ£å1J$00023223-857d-4dfd-b960-7e050835079c

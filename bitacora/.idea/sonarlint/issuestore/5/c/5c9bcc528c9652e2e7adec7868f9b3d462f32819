@@ -1,0 +1,11 @@
+
+
+java:S1128"FRemove this unused import 'co.uco.bitacora.domains.equipo.TipoEquipo'.(éËïµùÿÿÿÿ8åøıæä1J$c3e01139-1e52-49b1-b130-988d7477e555
+
+java:S1128">Remove this unused import 'jakarta.transaction.Transactional'.(ß–Ê³8æøıæä1J$99b45dba-a9e6-4fdc-a586-fa09405b6eb0
+–
+java:S1128"NRemove this unused import 'org.springframework.data.jpa.repository.Modifying'.(—·Ñ”şÿÿÿÿ8æøıæä1J$e992087b-7125-4f08-b9c6-6ec7f9fabe46
+’
+java:S1128"JRemove this unused import 'org.springframework.data.jpa.repository.Query'.(Äºöïşÿÿÿÿ8æøıæä1J$0ba44474-4fbc-40b4-9422-cc0a84a1d074
+
+java:S1128	"LRemove this unused import 'org.springframework.data.repository.query.Param'.(©”šô8æøıæä1J$31ffe7d2-8b4a-49b8-a543-d6056cd4afbc

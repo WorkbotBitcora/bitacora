@@ -13,23 +13,48 @@ public class Chek {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     private String nombre;
+    private long idTipoEquipo;
     private boolean estado;
 
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL )
     private List<Recomendacion> recomendacionList;
 
     public Chek(long id, String nombre, boolean estado, List<Recomendacion> RecomendacionesRespectivas) {
         this.id = id;
         this.nombre = nombre;
         this.estado = estado;
+
         //aqui traigo los datos de cada id
         this.recomendacionList = RecomendacionesRespectivas;
     }
 
+    public Chek(long id, String nombre, long idTipoEquipo, boolean estado, List<Recomendacion> recomendacionList) {
+        this.id = id;
+        this.nombre = nombre;
+        this.idTipoEquipo = idTipoEquipo;
+        this.estado = estado;
+        this.recomendacionList = recomendacionList;
+    }
+
+    public Chek(String nombre, long idTipoEquipo, boolean estado, List<Recomendacion> recomendacionList) {
+        this.nombre = nombre;
+        this.idTipoEquipo = idTipoEquipo;
+        this.estado = estado;
+        this.recomendacionList = recomendacionList;
+    }
+
     public Chek() {
+        this.idTipoEquipo = 0;
         this.nombre = "vacio";
         this.estado = true;
-        //this.recomendacionList.add(new Recomendacion());
+    }
+
+    public long getIdTipoEquipo() {
+        return idTipoEquipo;
+    }
+
+    public void setIdTipoEquipo(long idTipoEquipo) {
+        this.idTipoEquipo = idTipoEquipo;
     }
 
     public long getId() {
