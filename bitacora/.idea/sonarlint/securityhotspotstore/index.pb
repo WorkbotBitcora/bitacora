@@ -53,3 +53,5 @@ s
 Csrc/main/java/co/uco/bitacora/repository/ITipoEquipoRepository.java,8\b\8b7adcf6bec58938823b0d0028b506b65de6b952
 u
 Esrc/main/java/co/uco/bitacora/domains/objetosAuxiliares/DatoChek.java,e\c\ecd9f74ba2cdf852c2c8bb8ed50ad502eef31362
+v
+Fsrc/main/java/co/uco/bitacora/controllers/RecomendacionController.java,2\b\2bd104f88ba991c5642c54e5e2616edc6eab5905

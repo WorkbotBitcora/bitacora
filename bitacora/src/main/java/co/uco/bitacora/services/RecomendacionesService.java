@@ -3,8 +3,10 @@ package co.uco.bitacora.services;
 import co.uco.bitacora.domains.bitacora.Descripcion;
 import co.uco.bitacora.domains.recomendacion.Recomendacion;
 import co.uco.bitacora.domains.revision.Chek;
+import co.uco.bitacora.domains.revision.Revision;
 import co.uco.bitacora.repository.IDescripcionRepository;
 import co.uco.bitacora.repository.IRecomendacionRepository;
+import co.uco.bitacora.repository.IRevisionRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,6 +20,9 @@ public class RecomendacionesService {
 
     @Autowired
     private  IRecomendacionRepository iRecomendacionRepository;
+
+    @Autowired
+    private IRevisionRepository iRevisionRepository;
 
     private  String data;
 
@@ -168,4 +173,23 @@ public class RecomendacionesService {
         return respuesta;
     }
 
+
+    public List<String> traerRecomendacionesPorIdRevision(long idRevision){
+        List<Revision> respuesta = new ArrayList<>();
+        List<String> recomendaciones = new ArrayList<>();
+        iRevisionRepository.findById(idRevision).ifPresent(dato -> {
+            respuesta.add(dato);
+        });
+
+        for (int i = 0; i < respuesta.get(0).getChekList().size(); i++) {
+            if (!respuesta.get(0).getChekList().get(i).isEstado()){
+                for (int j = 0; j < respuesta.get(0).getChekList().get(i).getRecomendacionList().size(); j++) {
+                    recomendaciones.add(respuesta.get(0).getChekList().get(i).getRecomendacionList().get(j).getRecomendacion());
+                }
+            }
+
+        }
+
+        return recomendaciones;
+    }
 }

@@ -1,5 +1,7 @@
 
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¾õŸğä1J$f52f9638-6477-4e77-b431-27f2423ca45c
-c
-java:S1128"FRemove this unused import 'org.hibernate.annotations.DialectOverride'.(ÈĞ†8ğšŸóä1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ËŞ©¤å1J$6505c0f5-893f-4224-9d27-7541a81daff4
+
+java:S1128"LRemove this unused import 'co.uco.bitacora.services.RecomendacionesService'.(¾µ¯Ã8ÏŞ©¤å1J$04f7003d-0b98-41e8-917e-7b597cbf8e5c
+‰
+java:S1128"FRemove this unused import 'org.hibernate.annotations.DialectOverride'.(ÈĞ†8ÏŞ©¤å1J$3c0b8ec0-c3e6-4540-9fb4-796be6cd0ed7

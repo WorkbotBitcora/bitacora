@@ -1,9 +1,9 @@
 
- 	java:S116"^Rename this field "ServiciosDeBitacora" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü£ˆ¢8ÙÃ­öä1J$7e61145c-bd7d-4b45-95c4-e3bc89ccb3ff
+ 	java:S116"^Rename this field "ServiciosDeBitacora" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü£ˆ¢8ÙÃ­öä1J$d696e2f3-10ce-4f98-ab95-022c20f096d4
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÙÃ­öä1J$2988ef24-0391-49c9-8a84-767dd09a8430
-r	java:S106."+Replace this use of System.out by a logger.(„ô¨®üÿÿÿÿ8ŞÃ­öä1J$63d304d6-ab35-4920-8ae6-f8d77cb0f89f
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÙÃ­öä1J$cbbc556e-9256-4648-9c7c-2444bb2f167b
+r	java:S106."+Replace this use of System.out by a logger.(„ô¨®üÿÿÿÿ8ŞÃ­öä1J$794c3dc9-0ced-4afd-a797-f69b8d9b6012
 Š
-java:S1128"BRemove this unused import 'co.uco.bitacora.domains.equipo.Equipo'.(¹ı¡Üÿÿÿÿÿ8àÃ­öä1J$89476bf7-4d44-43ac-bd21-5b916eb42bd3
+java:S1128"BRemove this unused import 'co.uco.bitacora.domains.equipo.Equipo'.(¹ı¡Üÿÿÿÿÿ8àÃ­öä1J$1c9380c8-8e81-460a-bcb4-f8eb9e2cd67b
 w
-java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8àÃ­öä1J$3cb42ceb-5679-4bcc-915f-4b131cb22662
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8àÃ­öä1J$941b0c07-5865-4c1d-9a93-721c41e41539

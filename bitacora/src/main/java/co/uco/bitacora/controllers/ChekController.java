@@ -4,6 +4,7 @@ package co.uco.bitacora.controllers;
 import co.uco.bitacora.domains.objetosAuxiliares.DatoChek;
 import co.uco.bitacora.domains.revision.Chek;
 import co.uco.bitacora.services.ChekService;
+import co.uco.bitacora.services.RecomendacionesService;
 import org.hibernate.annotations.DialectOverride;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -16,6 +17,8 @@ public class ChekController {
     @Autowired
     private ChekService chekService = new ChekService();
 
+
+
     @PostMapping("/chek")//ok paso pruebas
     public String llenaData(){
         return chekService.CargarChek();
@@ -23,6 +26,10 @@ public class ChekController {
 
     @GetMapping("/cheks/{tipo}")//ok paso pruebas
     public List<Chek> obtenerChecksPorTipo(@PathVariable long tipo) {
+        return chekService.obtenerChecksPorId(tipo);
+    }
+    @GetMapping("/rec/{tipo}")//ok paso pruebas
+    public List<Chek> recomendacionesPorIdRevision(@PathVariable long tipo) {
         return chekService.obtenerChecksPorId(tipo);
     }
 
