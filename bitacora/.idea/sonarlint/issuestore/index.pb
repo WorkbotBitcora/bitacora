@@ -55,3 +55,9 @@ u
 Esrc/main/java/co/uco/bitacora/domains/objetosAuxiliares/DatoChek.java,e\c\ecd9f74ba2cdf852c2c8bb8ed50ad502eef31362
 v
 Fsrc/main/java/co/uco/bitacora/controllers/RecomendacionController.java,2\b\2bd104f88ba991c5642c54e5e2616edc6eab5905
+p
+@src/main/java/co/uco/bitacora/services/ObservacionesService.java,7\8\789972bc13e04950642c08790e67bcdc93c28316
+t
+Dsrc/main/java/co/uco/bitacora/controllers/ObservacionController.java,b\b\bb6dd73577e685d91d6d1e60c2fb74415cc0db6c
+t
+Dsrc/main/java/co/uco/bitacora/repository/IObservacionRepository.java,9\3\93961efc1f0b0090b8943f373407e4832a775378
