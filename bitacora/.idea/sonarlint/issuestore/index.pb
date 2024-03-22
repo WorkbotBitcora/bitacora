@@ -55,3 +55,5 @@ u
 Esrc/main/java/co/uco/bitacora/domains/objetosAuxiliares/DatoChek.java,e\c\ecd9f74ba2cdf852c2c8bb8ed50ad502eef31362
 v
 Fsrc/main/java/co/uco/bitacora/controllers/RecomendacionController.java,2\b\2bd104f88ba991c5642c54e5e2616edc6eab5905
+<
+build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
