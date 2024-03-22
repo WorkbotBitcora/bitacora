@@ -55,5 +55,32 @@ u
 Esrc/main/java/co/uco/bitacora/domains/objetosAuxiliares/DatoChek.java,e\c\ecd9f74ba2cdf852c2c8bb8ed50ad502eef31362
 v
 Fsrc/main/java/co/uco/bitacora/controllers/RecomendacionController.java,2\b\2bd104f88ba991c5642c54e5e2616edc6eab5905
+<<<<<<< HEAD
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+=======
+p
+@src/main/java/co/uco/bitacora/services/ObservacionesService.java,7\8\789972bc13e04950642c08790e67bcdc93c28316
+t
+Dsrc/main/java/co/uco/bitacora/controllers/ObservacionController.java,b\b\bb6dd73577e685d91d6d1e60c2fb74415cc0db6c
+t
+Dsrc/main/java/co/uco/bitacora/repository/IObservacionRepository.java,9\3\93961efc1f0b0090b8943f373407e4832a775378
+r
+Bsrc/main/java/co/uco/bitacora/jwt/JwtAuthenticationEntryPoint.java,f\e\fe58498a29a772cfffbd572ace50de95b7ffb9ae
+g
+7src/main/java/co/uco/bitacora/jwt/JwtRequestFilter.java,f\3\f3265d7ac427cb363554791c90f4392605b61d20
+c
+3src/main/java/co/uco/bitacora/jwt/JwtTokenUtil.java,b\d\bd76363ac8a19d5b05ea977518e4a660ea25e03b
+z
+Jsrc/main/java/co/uco/bitacora/controllers/JwtAuthenticationController.java,5\9\599e537ca8f5400e03b41feacea53382bb9a06ef
+i
+9src/main/java/co/uco/bitacora/domains/jwt/JwtRequest.java,5\7\57e4a6a8f970f63995f9cb571f33a1cc57df8098
+j
+:src/main/java/co/uco/bitacora/domains/jwt/JwtResponse.java,1\c\1c41f847c6b3c0479a0c3499baf2d7fccf8550e1
+q
+Asrc/main/java/co/uco/bitacora/services/JwtUserDetailsService.java,b\1\b1cfaaffffc8419a5b553e4ce8cad44bb2cf9163
+u
+Esrc/main/java/co/uco/bitacora/services/jwt/JwtUserDetailsService.java,e\5\e5d21994c18d881a583db13d330217efe814b96b
+~
+Nsrc/main/java/co/uco/bitacora/controllers/jwt/JwtAuthenticationController.java,b\3\b38457f23f043cc05746686f8b8069851d4dd244
+>>>>>>> c66faa0b3f3298c92f103faa1a568f30183d809f
