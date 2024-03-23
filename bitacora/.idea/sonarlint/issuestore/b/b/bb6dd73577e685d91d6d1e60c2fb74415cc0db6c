@@ -1,3 +1,5 @@
 
 _
-java:S2094"BRemove this empty class, write its code or make it an "interface".( ˆÀÙ8Ò¿®šæ1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Ž“ŽÍæ1
+n
+java:S1128"LRemove this unused import 'co.uco.bitacora.domains.usuario.editableUsuario'.(”°­›ûÿÿÿÿ8““ŽÍæ1

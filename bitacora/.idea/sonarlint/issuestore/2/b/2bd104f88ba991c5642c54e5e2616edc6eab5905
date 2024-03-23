@@ -1,11 +1,11 @@
 
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8µ¤å1J$288bdca4-ca86-4c67-b8f5-bea91c096265
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8µ¤å1J$5cb693a3-6b66-4a0a-8b0f-edd1052ea304
 q
-java:S1128"ORemove this unused import 'co.uco.bitacora.domains.objetosAuxiliares.DatoChek'.(¢úĞıÿÿÿÿ8†ùµ¤å1
+java:S1128"ORemove this unused import 'co.uco.bitacora.domains.objetosAuxiliares.DatoChek'.(¢úĞıÿÿÿÿ8ú–Íæ1
 d
-java:S1128"BRemove this unused import 'co.uco.bitacora.domains.revision.Chek'.(›×’Èùÿÿÿÿ8†ùµ¤å1
+java:S1128"BRemove this unused import 'co.uco.bitacora.domains.revision.Chek'.(›×’Èùÿÿÿÿ8ú–Íæ1
 ^
-java:S1128"ARemove this unused import 'co.uco.bitacora.services.ChekService'.(Ê±Òİ8†ùµ¤å1
+java:S1128"ARemove this unused import 'co.uco.bitacora.services.ChekService'.(Ê±Òİ8ú–Íæ1
 c
-java:S1128"FRemove this unused import 'org.hibernate.annotations.DialectOverride'.(ÈĞ†8†ùµ¤å1
+java:S1128"FRemove this unused import 'org.hibernate.annotations.DialectOverride'.(ÈĞ†8ú–Íæ1
