@@ -1,4 +1,5 @@
 package co.uco.bitacora.controllers;
+import co.uco.bitacora.domains.objetosAuxiliares.Login;
 import co.uco.bitacora.domains.usuario.Usuario;
 import co.uco.bitacora.domains.usuario.editableUsuario;
 import co.uco.bitacora.services.LoginService;
@@ -31,6 +32,17 @@ public class LoginController {
     @ResponseStatus(HttpStatus.ACCEPTED)
     public void actualizarUsuario (@RequestBody editableUsuario dato){
         loginService.editarUsuario(dato);
+    }
+
+
+    @PostMapping("/login")
+    public boolean login (Login login){
+        return loginService.login(login);
+    }
+
+    @PostMapping("/prueba")
+    public String plogin (){
+        return "Ingreso exitoso";
     }
 
 

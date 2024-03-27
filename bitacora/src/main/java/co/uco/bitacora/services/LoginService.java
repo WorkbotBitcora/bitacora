@@ -1,4 +1,5 @@
 package co.uco.bitacora.services;
+import co.uco.bitacora.domains.objetosAuxiliares.Login;
 import co.uco.bitacora.domains.usuario.TipoUsuario;
 import co.uco.bitacora.domains.usuario.Usuario;
 
@@ -33,16 +34,9 @@ public class LoginService {
          * */
         //llenamos los tipo usuario
         tipoUsuarioAux = new TipoUsuario(1);
-
-        System.out.println("id: " + tipoUsuarioAux.getId() + " descripcion: " + tipoUsuarioAux.getDescripcion());
-
         iTipoUsuarioRepository.save(tipoUsuarioAux);
-
-        System.out.println("intento guardar");
-
         tipoUsuarioAux = new TipoUsuario(2);
         iTipoUsuarioRepository.save(tipoUsuarioAux);
-
         tipoUsuarioAux = new TipoUsuario(3);
         iTipoUsuarioRepository.save(tipoUsuarioAux);
     }
@@ -53,8 +47,8 @@ public class LoginService {
             usuarioAux = new Usuario(usde.getNombre(), usde.getApellido(), usde.getUsuario(), usde.getContrasena(), usde.getIdTipoUsuario());
             iUsuarioRepository.save(usuarioAux);
             return "Registro Exitoso";
-        }catch (Exception e ){
-            return "Usuario No Registrado \n" +  e.getMessage();
+        } catch (Exception e) {
+            return "Usuario No Registrado \n" + e.getMessage();
         }
     }
 
@@ -95,13 +89,30 @@ public class LoginService {
     }
 
     @Transactional
-    public List<Usuario> mostrarUsuario (){
+    public List<Usuario> mostrarUsuario() {
         return iUsuarioRepository.findAll();
     }
 
 
     public void cancelarSolicitid(long id) {
         iUsuarioRepository.deleteById(id);
+    }
+
+    public boolean login(Login login) {
+        try {
+            Usuario user = new Usuario();
+            user = iUsuarioRepository.traerUsuarioPorNombreUsuario(login.getNombreUsuario());
+            if (user.getContrasena().equals(login.getPassword())) {
+                return true;
+            }else{
+                return false;
+            }
+
+        }
+        catch (Exception e){
+            return false; ////Cuidado
+        }
+
     }
 
 }
