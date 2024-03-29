@@ -10,6 +10,8 @@ import co.uco.bitacora.domains.usuario.Usuario;
 import co.uco.bitacora.domains.usuario.userDescription;
 import co.uco.bitacora.repository.*;
 import jakarta.transaction.Transactional;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

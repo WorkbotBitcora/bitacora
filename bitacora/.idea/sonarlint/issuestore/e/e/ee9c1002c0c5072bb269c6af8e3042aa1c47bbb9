@@ -1,0 +1,7 @@
+
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8—ÈØ½è1J$c788eaac-f595-497c-bdc4-5223965c88a6
+
+java:S3305"UInject this field value directly into "optenerUsuario", the only method that uses it.(«Şâ¡üÿÿÿÿ8˜ÈØ½è1J$a1c4882e-98ae-4b24-a8dc-aa749ca8f05c
+s
+java:S1128"VRemove this unused import 'org.apache.tomcat.util.net.openssl.ciphers.Authentication'.(Í÷˜­8İä¾è1

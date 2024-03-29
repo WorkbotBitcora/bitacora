@@ -1,7 +1,6 @@
 package co.uco.bitacora.controllers;
 
 import co.uco.bitacora.domains.objetosAuxiliares.ObservacionData;
-import co.uco.bitacora.domains.usuario.editableUsuario;
 import co.uco.bitacora.services.ObservacionesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

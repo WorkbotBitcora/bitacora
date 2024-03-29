@@ -1,0 +1,19 @@
+
+«
+java:S14881"cImmediately return this expression instead of assigning it to the temporary variable "jwtResponse".(Ó³©ûÿÿÿÿ8¯ƒ¿è1J$25e9adb6-3d14-44a6-94a8-6ae19ff2fa02
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8´ƒ¿è1J$ba83cb79-70ff-43cb-b572-da74ad7dbe79
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8´ƒ¿è1J$9db453cb-f20f-498a-ae81-75490a3dc257
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8´ƒ¿è1J$e7dc819a-1d1e-498e-a18f-691dcdb96f0f
+m	java:S106"+Replace this use of System.out by a logger.(Óº¶ú8·ƒ¿è1J$399217e4-bf15-4d73-90f3-6a31fc740cd3
+m	java:S106"+Replace this use of System.out by a logger.(ô¤¾´8¶¿è1J$305e9810-ecb1-411d-8cf0-2cd525d02154
+m	java:S106"+Replace this use of System.out by a logger.(ĞÀÏ³8Ê¾š¿è1J$8514396b-41a4-44b9-a9ce-cd5bce84af19
+r	java:S106!"+Replace this use of System.out by a logger.( ”ĞŠşÿÿÿÿ8êò¿è1J$628ac821-a1ad-4d27-8973-4568a928797e
+r	java:S106&"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8¨Ÿ¿è1J$73e038ff-9e59-48f3-9f0d-00051a29c762
+§
+java:S1128
+"_Remove this unused import 'org.springframework.security.authentication.AuthenticationProvider'.(±­¼üÿÿÿÿ8üÉ¿è1J$145b6696-63ba-46b4-adf2-327239036491
+™
+java:S1128"VRemove this unused import 'org.springframework.security.core.userdetails.UserDetails'.(ÊÁ¥8üÉ¿è1J$714dd331-344c-452d-ae22-afcf0529c408

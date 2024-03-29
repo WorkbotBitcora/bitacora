@@ -1,9 +1,9 @@
 
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8øÜÏìç1J$110c5313-00e4-4575-a7c2-f524f9ba51b6
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8øÜÏìç1J$c3325d7f-866b-4634-8b37-ee89c7666906
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ùÜÏìç1J$f8eec971-2ce1-4f4b-8cf6-42c2475598cb
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ùÜÏìç1J$9b7ef114-b1c5-4589-90bb-357dd5377dc2
 €
-java:S1854g"8Remove this useless assignment to local variable "user".(ºƒµùÿÿÿÿ8İÏìç1J$92ccf8df-7c9e-4d38-8029-34ad7477b91e
+java:S1854g"8Remove this useless assignment to local variable "user".(ºƒµùÿÿÿÿ8İÏìç1J$e8a79e0d-4c00-4aaa-843d-541f02a2166e
 „
-java:S1126i"AReplace this if-then-else statement by a single return statement.(¾ŒÉ‘8“İÏìç1J$12626e60-5ef8-4a3e-8fce-fd150d3aad20
+java:S1126i"AReplace this if-then-else statement by a single return statement.(¾ŒÉ‘8“İÏìç1J$9092b62a-fbfe-4f39-98d9-8272370cf720

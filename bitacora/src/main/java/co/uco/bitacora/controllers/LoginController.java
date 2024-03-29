@@ -1,7 +1,7 @@
 package co.uco.bitacora.controllers;
 import co.uco.bitacora.domains.objetosAuxiliares.Login;
 import co.uco.bitacora.domains.usuario.Usuario;
-import co.uco.bitacora.domains.usuario.editableUsuario;
+import co.uco.bitacora.domains.objetosAuxiliares.EditableUsuario;
 import co.uco.bitacora.services.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -30,7 +30,7 @@ public class LoginController {
 
     @PatchMapping( value = "/usuario")
     @ResponseStatus(HttpStatus.ACCEPTED)
-    public void actualizarUsuario (@RequestBody editableUsuario dato){
+    public void actualizarUsuario (@RequestBody EditableUsuario dato){
         loginService.editarUsuario(dato);
     }
 
@@ -48,7 +48,7 @@ public class LoginController {
 
     @PostMapping("/usuario")
     @ResponseStatus(HttpStatus.CREATED)
-    public String ingresarUsuario(@RequestBody editableUsuario usde){
+    public String ingresarUsuario(@RequestBody EditableUsuario usde){
         return loginService.agregarUsuario(usde);
     }
 

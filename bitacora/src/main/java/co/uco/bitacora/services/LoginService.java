@@ -3,7 +3,7 @@ import co.uco.bitacora.domains.objetosAuxiliares.Login;
 import co.uco.bitacora.domains.usuario.TipoUsuario;
 import co.uco.bitacora.domains.usuario.Usuario;
 
-import co.uco.bitacora.domains.usuario.editableUsuario;
+import co.uco.bitacora.domains.objetosAuxiliares.EditableUsuario;
 import co.uco.bitacora.repository.*;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,10 +41,10 @@ public class LoginService {
         iTipoUsuarioRepository.save(tipoUsuarioAux);
     }
 
-    public String agregarUsuario(editableUsuario usde) {
+    public String agregarUsuario(EditableUsuario editableUsuario) {
         try {
             //Aqui se Crea el usuario
-            usuarioAux = new Usuario(usde.getNombre(), usde.getApellido(), usde.getUsuario(), usde.getContrasena(), usde.getIdTipoUsuario());
+            usuarioAux = new Usuario(editableUsuario.getNombre(), editableUsuario.getApellido(), editableUsuario.getUsuario(), editableUsuario.getContrasena(), editableUsuario.getIdTipoUsuario());
             iUsuarioRepository.save(usuarioAux);
             return "Registro Exitoso";
         } catch (Exception e) {
@@ -57,7 +57,7 @@ public class LoginService {
         return iUsuarioRepository.findAll();
     }
 
-    public void editarUsuario(editableUsuario dato) {
+    public void editarUsuario(EditableUsuario dato) {
 
         Usuario equ = new Usuario();
         equ.setNombre(dato.getNombre());

@@ -1,5 +1,7 @@
 
-1
-java:S1700"Rename field "usuario"(õ¢Ä¹ÿÿÿÿÿ
-i
-java:S1128"NRemove this unused import 'co.uco.bitacora.repository.ITipoUsuarioRepository'.(Þï­‘ÿÿÿÿÿ
+^
+java:S1700"Rename field "usuario"(õ¢Ä¹ÿÿÿÿÿ8‘Í·¼è1J$d11c5b74-d945-4764-a08c-981f4427e744
+u
+java:S1948"-Make "tipoUsuario" transient or serializable.(ÒëÿŽüÿÿÿÿ8¡Í·¼è1J$5fdd8c07-d8b0-4405-a199-3bee9864ad0b
+–
+java:S1128"NRemove this unused import 'co.uco.bitacora.repository.ITipoUsuarioRepository'.(Þï­‘ÿÿÿÿÿ8©Í·¼è1J$9d955bb1-249d-4b62-9735-2f088bff295b

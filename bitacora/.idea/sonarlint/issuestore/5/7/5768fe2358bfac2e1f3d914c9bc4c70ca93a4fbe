@@ -1,3 +1,9 @@
 
-ˆ
-java:S1128"@Remove this unused import 'org.springframework.http.HttpStatus'.(íŸ¤Šúÿÿÿÿ8ŠõÄíç1J$686d2fff-8675-471b-bf81-59f8dabedee2
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ñú½è1J$ccfbc7da-cb1f-425a-9e84-f50e59569be8
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8òú½è1J$31d3d5ea-c62c-4b38-a18b-32a622ecc388
+¢
+java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(¸ñÓèüÿÿÿÿ8òú½è1J$67388e1a-c93e-4d79-a94e-54ab1a794862
+
+java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(Á®†‹8òú½è1J$e6aae0b1-e558-433c-b8f7-8c2bcbc91685
