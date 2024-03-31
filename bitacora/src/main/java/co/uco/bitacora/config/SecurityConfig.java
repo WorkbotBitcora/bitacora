@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
@@ -27,7 +28,9 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain (HttpSecurity httpSecurity)throws Exception
     {
-        return httpSecurity.csrf(csrf -> csrf.disable()).authorizeHttpRequests(dato ->
+        httpSecurity.cors(AbstractHttpConfigurer::disable);
+        httpSecurity.csrf(AbstractHttpConfigurer::disable);
+        return httpSecurity.authorizeHttpRequests(dato ->
             dato.requestMatchers("/procesador/bitacora/v2/Authentication/**").permitAll().anyRequest().authenticated()
         )
                 .sessionManagement(sessionManager->

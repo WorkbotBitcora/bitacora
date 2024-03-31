@@ -1,0 +1,10 @@
+
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ËƒÅé1J$e1bee978-1c49-486a-9a91-dd3439afae2e
+¥
+java:S1450"]Remove the "tipoUsuarioAux" field and declare it as a local variable in the relevant methods.(É®˜ßÿÿÿÿÿ8­™±”é1J$d3df50e6-28dd-463f-97fa-abc24ee509ef
+
+java:S1128"LRemove this unused import 'co.uco.bitacora.domains.objetosAuxiliares.Login'.(µ¹›Ø8«“½”é1J$12535307-5732-407d-9351-9fae32985726
+¨
+java:S1128
+"`Remove this unused import 'org.springframework.security.authentication.BadCredentialsException'.(Òòîƒÿÿÿÿÿ8«“½”é1J$044d0031-19b9-4074-911e-0a5c186b6b80

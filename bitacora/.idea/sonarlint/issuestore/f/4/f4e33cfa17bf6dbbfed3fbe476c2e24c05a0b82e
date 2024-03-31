@@ -1,19 +1,23 @@
 
+˜	java:S117?"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ü­‘ûÿÿÿÿ8áÚÃé1J$7f047601-4325-423b-8efd-081159d24dc1
 «
-java:S14881"cImmediately return this expression instead of assigning it to the temporary variable "jwtResponse".(Ó³©ûÿÿÿÿ8¯ƒ¿è1J$25e9adb6-3d14-44a6-94a8-6ae19ff2fa02
+java:S1488C"cImmediately return this expression instead of assigning it to the temporary variable "jwtResponse".(Ó³©ûÿÿÿÿ8âÚÃé1J$52843eda-cb8d-4a17-a91b-919aa34492c7
+Ä
+java:S1186#"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ø«Í‚8Í®¹‘é1J$d4090ad2-1f5f-48d5-b071-0455807d6c94
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8´ƒ¿è1J$ba83cb79-70ff-43cb-b572-da74ad7dbe79
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8éÚÃé1J$f7384d53-9640-45dc-beb7-c5a85b34e50b
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8´ƒ¿è1J$9db453cb-f20f-498a-ae81-75490a3dc257
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8éÚÃé1J$b5c8da46-0e64-4efc-9362-ea5463779e3b
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8´ƒ¿è1J$e7dc819a-1d1e-498e-a18f-691dcdb96f0f
-m	java:S106"+Replace this use of System.out by a logger.(Óº¶ú8·ƒ¿è1J$399217e4-bf15-4d73-90f3-6a31fc740cd3
-m	java:S106"+Replace this use of System.out by a logger.(ô¤¾´8¶¿è1J$305e9810-ecb1-411d-8cf0-2cd525d02154
-m	java:S106"+Replace this use of System.out by a logger.(ĞÀÏ³8Ê¾š¿è1J$8514396b-41a4-44b9-a9ce-cd5bce84af19
-r	java:S106!"+Replace this use of System.out by a logger.( ”ĞŠşÿÿÿÿ8êò¿è1J$628ac821-a1ad-4d27-8973-4568a928797e
-r	java:S106&"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8¨Ÿ¿è1J$73e038ff-9e59-48f3-9f0d-00051a29c762
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8éÚÃé1J$e151b255-61b3-40d9-9de3-cd3f853277a6
+…
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8éÚÃé1J$5e84c9ec-8a45-4b21-a96b-9d543c208557
+m	java:S106("+Replace this use of System.out by a logger.(Óº¶ú8ìÚÃé1J$b690b434-6cc9-45fa-bb21-25b7c6e34ce3
+m	java:S106)"+Replace this use of System.out by a logger.(ô¤¾´8ìÚÃé1J$b7cda7f2-9356-4764-94fa-35ebb7e926a5
+m	java:S106*"+Replace this use of System.out by a logger.(ĞÀÏ³8ìÚÃé1J$6adda642-9155-42cf-822b-0644c2e3f19f
+r	java:S106,"+Replace this use of System.out by a logger.( ”ĞŠşÿÿÿÿ8íÚÃé1J$9463e138-4bdc-495c-9ae8-ce415188530e
+r	java:S1061"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8îÚÃé1J$cacb4e23-961a-4eb6-b9d7-2af46aed6f99
 §
-java:S1128
-"_Remove this unused import 'org.springframework.security.authentication.AuthenticationProvider'.(±­¼üÿÿÿÿ8üÉ¿è1J$145b6696-63ba-46b4-adf2-327239036491
+java:S1128"_Remove this unused import 'org.springframework.security.authentication.AuthenticationProvider'.(±­¼üÿÿÿÿ8°Ÿ¯‘é1J$eb1a350b-d074-4a6d-b070-abdbb3106d42
 ™
-java:S1128"VRemove this unused import 'org.springframework.security.core.userdetails.UserDetails'.(ÊÁ¥8üÉ¿è1J$714dd331-344c-452d-ae22-afcf0529c408
+java:S1128"VRemove this unused import 'org.springframework.security.core.userdetails.UserDetails'.(ÊÁ¥8°Ÿ¯‘é1J$6950962d-f30b-4238-b24a-6471441b02f2

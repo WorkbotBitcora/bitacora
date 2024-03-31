@@ -1,12 +1,4 @@
 
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8àí»»è1J$e4cca7d0-90eb-434e-9b08-a523aa0ecd72
-r	java:S1062"+Replace this use of System.out by a logger.(„ô¨®üÿÿÿÿ8¹¼—»è1J$d5ce1d53-6c11-4d48-9821-a022b6fee6c3
-Š
-java:S1128"BRemove this unused import 'co.uco.bitacora.domains.equipo.Equipo'.(¹ı¡Üÿÿÿÿÿ8òœ¼»è1J$c4329166-df90-43ba-9ee4-a073a72e8db0
-x
-java:S1128"5Remove this unused import 'lombok.NoArgsConstructor'.(¸¨›8óœ¼»è1J$4a4e45ce-a63b-40f2-bc73-8450771641f7
-ƒ
-java:S1128	";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØúøÿÿÿÿ8Å•½»è1J$609b654b-5f8b-4e3e-a84a-65c919f73c95
-w
-java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8óœ¼»è1J$296b500d-0bbb-487f-8cce-e8fb933f8741
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8àí»»è1J$fa614b52-09af-4a2b-9340-94a91c1050d5
+r	java:S1063"+Replace this use of System.out by a logger.(„ô¨®üÿÿÿÿ8¹¼—»è1J$cd9e2c22-9d12-417e-ba1f-6a363bd66bb7

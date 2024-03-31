@@ -9,6 +9,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface IUsuarioRepository extends JpaRepository<Usuario, Long> {
@@ -16,6 +17,6 @@ public interface IUsuarioRepository extends JpaRepository<Usuario, Long> {
 
     @Transactional
     @Query(value = "select e from Usuario  e  where e.usuario = :name ")
-    Usuario traerUsuarioPorNombreUsuario(@Param("name") String name   );
+    Optional<Usuario> traerUsuarioPorNombreUsuario(@Param("name") String name);
 
 }

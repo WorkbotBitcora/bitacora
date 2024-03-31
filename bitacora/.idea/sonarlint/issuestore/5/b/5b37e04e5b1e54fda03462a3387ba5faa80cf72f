@@ -1,9 +1,11 @@
 
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8øÜÏìç1J$c3325d7f-866b-4634-8b37-ee89c7666906
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ËƒÅé1J$ffdcb129-adf4-4e72-9472-4ab0d136e53f
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ùÜÏìç1J$9b7ef114-b1c5-4589-90bb-357dd5377dc2
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÍƒÅé1J$5cd27ff7-f36c-4bf6-aee6-c990b872b140
+¥
+java:S1450"]Remove the "tipoUsuarioAux" field and declare it as a local variable in the relevant methods.(É®˜ßÿÿÿÿÿ8­™±”é1J$28d05b63-867f-45ca-812b-538f43193d28
 €
-java:S1854g"8Remove this useless assignment to local variable "user".(ºƒµùÿÿÿÿ8İÏìç1J$e8a79e0d-4c00-4aaa-843d-541f02a2166e
+java:S1854W"8Remove this useless assignment to local variable "user".(ºƒµùÿÿÿÿ8ÛƒÅé1J$8fd669f6-c57d-40d6-84b8-7f2129136b0c
 „
-java:S1126i"AReplace this if-then-else statement by a single return statement.(¾ŒÉ‘8“İÏìç1J$9092b62a-fbfe-4f39-98d9-8272370cf720
+java:S1126Y"AReplace this if-then-else statement by a single return statement.(¾ŒÉ‘8âƒÅé1J$28c06109-35ed-45d2-a32d-19ebc3c4dabd

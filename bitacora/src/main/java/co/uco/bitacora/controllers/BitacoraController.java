@@ -37,6 +37,7 @@ public class BitacoraController {
     }
 
 
+
     @GetMapping("/agenda")//ok paso pruebas
     public ResponseEntity<List<Bitacora>> mostrarAgenda() {
         return ResponseEntity.ok(serviciosDeBitacora.mostrarAgenda());
@@ -54,11 +55,12 @@ public class BitacoraController {
     @PostMapping("/agenda")//ok paso pruebas
     @ResponseStatus(HttpStatus.CREATED)
     public String ingresarRegistro(@RequestBody userDescription usde){
+
         return serviciosDeBitacora.AgregarBitacoraAlaAgenda(usde);
     }
 
     @GetMapping("/usuario/{id}")//ok paso pruebas
-    public ResponseEntity<List<Bitacora>> mostarPorUsuario(@PathVariable long id) {
+    public ResponseEntity<Bitacora> mostarPorUsuario(@PathVariable long id) {
         return ResponseEntity.ok(serviciosDeBitacora.mostrarPorUsuario(id));
     }
 

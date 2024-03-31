@@ -51,8 +51,7 @@ public class Usuario implements UserDetails {
         this.tipoUsuario= new TipoUsuario(tipoUsuario);
     }
 
-    public Usuario(long id, String nombre, String apellido, String usuario, String contrasena, TipoUsuario tipoUsuario) {
-        setId(id);
+    public Usuario(String nombre, String apellido, String usuario, String contrasena, TipoUsuario tipoUsuario) {
         setNombre(nombre);
         setApellido(apellido);
         setUsuario(usuario);

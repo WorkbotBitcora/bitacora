@@ -1,11 +1,13 @@
 
 
-java:S1128"FRemove this unused import 'co.uco.bitacora.domains.equipo.TipoEquipo'.(éËïµùÿÿÿÿ8åøıæä1J$c3e01139-1e52-49b1-b130-988d7477e555
+java:S1128"FRemove this unused import 'co.uco.bitacora.domains.equipo.TipoEquipo'.(éËïµùÿÿÿÿ8ÄË‚”é1J$544cf7cb-b80a-4861-a1bc-b03d364a09ea
 
-java:S1128">Remove this unused import 'jakarta.transaction.Transactional'.(ß–Ê³8æøıæä1J$99b45dba-a9e6-4fdc-a586-fa09405b6eb0
+java:S1128">Remove this unused import 'jakarta.transaction.Transactional'.(ß–Ê³8ÅË‚”é1J$47384af6-7477-4755-bfdb-6cd06f7641d7
 –
-java:S1128"NRemove this unused import 'org.springframework.data.jpa.repository.Modifying'.(—·Ñ”şÿÿÿÿ8æøıæä1J$e992087b-7125-4f08-b9c6-6ec7f9fabe46
+java:S1128"NRemove this unused import 'org.springframework.data.jpa.repository.Modifying'.(—·Ñ”şÿÿÿÿ8ÅË‚”é1J$5b4bb1d1-5210-4705-8250-79aacc811382
 ’
-java:S1128"JRemove this unused import 'org.springframework.data.jpa.repository.Query'.(Äºöïşÿÿÿÿ8æøıæä1J$0ba44474-4fbc-40b4-9422-cc0a84a1d074
+java:S1128"JRemove this unused import 'org.springframework.data.jpa.repository.Query'.(Äºöïşÿÿÿÿ8ÅË‚”é1J$c10c33a4-f66c-4b46-884f-19ef289765bd
 
-java:S1128	"LRemove this unused import 'org.springframework.data.repository.query.Param'.(©”šô8æøıæä1J$31ffe7d2-8b4a-49b8-a543-d6056cd4afbc
+java:S1128	"LRemove this unused import 'org.springframework.data.repository.query.Param'.(©”šô8ÅË‚”é1J$bd16d677-a414-43e3-bb0d-69c2f73d594e
+w
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8ÅË‚”é1J$201774e4-3e41-4df2-8fcd-41ad39825222

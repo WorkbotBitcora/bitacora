@@ -6,11 +6,9 @@ import co.uco.bitacora.domains.objetosAuxiliares.Login;
 import co.uco.bitacora.services.jwt.JwtAuthenticationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/procesador/bitacora/v2/Authentication")
@@ -25,6 +23,7 @@ public class JwtAuthenticationController {
     }
 
     @PostMapping(value = "/reg")
+    @ResponseStatus(HttpStatus.CREATED)
     public  ResponseEntity<JwtResponse> registrar (@RequestBody EditableUsuario editableUsuario){
         return ResponseEntity.ok(jwtAuthenticationService.registrar(editableUsuario));
     }

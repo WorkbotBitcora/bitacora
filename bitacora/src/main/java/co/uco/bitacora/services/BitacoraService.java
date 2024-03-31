@@ -13,6 +13,7 @@ import jakarta.transaction.Transactional;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 
@@ -78,7 +79,7 @@ public class BitacoraService {
                 return  "La agenda Se A Guardado Con Exito ";
 
             }catch (Exception e ){
-                return "salio un error" + e.getMessage();
+                return "salio un error212121: " + e.getMessage();
             }
         }
     }
@@ -162,20 +163,31 @@ public class BitacoraService {
             return "no se actualizo";
         }
     }
+    public Bitacora mostrarPorUsuario(long id){
 
+        return iBitacoraRepository.findById(id).orElseThrow(()-> new UsernameNotFoundException("No se encontro La Bitacora"));
+    }
 
+/*
     public List<Bitacora> mostrarPorUsuario(long id){
+
         List<Bitacora> bitacorasPorUsuario = new ArrayList<>();
+        System.out.println("tama;o de lita de bitacora " + iBitacoraRepository.findAll().size());
+
         for (int i = 0 ; i <= iBitacoraRepository.findAll().size(); i++ ){
             iBitacoraRepository.findById((long)i).ifPresent(dato -> {
+                System.out.println("id " + id );
+
                 if (dato.getUsuario().getId() == id){
                     bitacorasPorUsuario.add(dato);
                 }
             });
+            System.out.println("id Bitacora " + bitacorasPorUsuario.get(i).getId() );
         }
+
         return bitacorasPorUsuario;
     }
-
+*/
 
     public Bitacora traerBitacoraPorID(long id){
         iBitacoraRepository.findById(id).ifPresent(dato -> {

@@ -1,6 +1,8 @@
 package co.uco.bitacora.services.jwt;
 
 
+import ch.qos.logback.core.net.server.Client;
+import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
@@ -12,6 +14,7 @@ import java.security.Key;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
 
 @Service
 public class JwtService {
@@ -37,4 +40,39 @@ public class JwtService {
         byte[] kBytes= Decoders.BASE64.decode(LLAVE);
         return Keys.hmacShaKeyFor(kBytes);
     }
+
+    public boolean isTokenValid(String token, UserDetails userDetails) {
+        final String nombreDeUsuario = optenerNombreUsuarioPorToken(token);
+        return (nombreDeUsuario.equals(userDetails.getUsername()) && !esValidoElToken(token));
+    }
+
+    public String optenerNombreUsuarioPorToken(String token) {
+        System.out.println("Entra al metodo Claim");
+        return optenerClaim(token, Claims::getSubject);
+    }
+
+    private Claims optenerTodosLosClains(String token){
+        System.out.println("OPTIENE TODOS LOS CLI");
+        return Jwts
+                .parserBuilder()
+                .setSigningKey(optenerLlave())
+                .build()
+                .parseClaimsJws(token)
+                .getBody();
+    }
+
+    public <T>T optenerClaim(String token , Function<Claims,T> claims){
+        System.out.println("Entra al metodo GENERICO Claim");
+        final Claims claims1 = optenerTodosLosClains(token);
+        System.out.println("OPTIENE LOS CLAIMS");
+        return claims.apply(claims1);
+    }
+    private Date optenerFechaExpiracion(String token){
+        return optenerClaim(token, Claims::getExpiration);
+    }
+
+    private boolean esValidoElToken (String token){
+        return optenerFechaExpiracion(token).before(new Date());
+    }
+
 }
