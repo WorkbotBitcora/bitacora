@@ -1,17 +1,13 @@
 
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ªä”öä1J$ce9e0076-57d4-4e62-a8a4-84d050713692
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ªä”öä1J$09af2eb1-ea8f-4df9-958b-7c6755933e50
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8«ä”öä1J$65074510-146d-4995-a0be-3ae773a1f8d2
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8«ä”öä1J$28d2019a-6e3a-4e5c-8f9f-c491ab5dc5d4
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8«ä”öä1J$fa1fcbce-137b-49dd-ab14-8ac85706fa1d
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8«ä”öä1J$b53f1f56-355a-4142-a25e-5e63a0de4ce1
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8«ä”öä1J$811287a7-952f-4a77-8949-d2c1c254ec64
-l	java:S106)"+Replace this use of System.out by a logger.(ìà¨V8®ä”öä1J$aa9ce950-4636-49a6-8f08-58f23c1a8653
-r	java:S106*"+Replace this use of System.out by a logger.(Ê¢¤ßúÿÿÿÿ8®ä”öä1J$a2b30c9b-bcfe-4848-88fa-d34ba9b5296b
-m	java:S106+"+Replace this use of System.out by a logger.(œ”¬8®ä”öä1J$a7eb71e1-49f4-4a58-8716-eb97271d9f3b
-m	java:S1060"+Replace this use of System.out by a logger.(äìÎÆ8¯ä”öä1J$1545db13-70d3-407f-86ff-99ccd896e838
-d
-java:S1128"BRemove this unused import 'co.uco.bitacora.domains.revision.Chek'.(›×’Èùÿÿÿÿ8Âüœ¡å1
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Âüœ¡å1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8«ä”öä1J$6b5d6690-ebd5-4eff-bbce-a92352ae17c3
+Š
+java:S1128"BRemove this unused import 'co.uco.bitacora.domains.revision.Chek'.(›×’Èùÿÿÿÿ8Âüœ¡å1J$dd2f685f-a6ef-48b9-9523-1bed8de3602f
+s
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Âüœ¡å1J$1168ced6-f43e-46cb-abf7-3a555dc7242f

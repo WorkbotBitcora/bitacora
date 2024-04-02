@@ -154,7 +154,6 @@ public class RecomendacionesService {
             data="No hay Recomendaciones";
             iRecomendacionRepository.save(new Recomendacion(39,data,31));
         }catch (Exception e){
-            System.out.println(e.getMessage() );
         }
     }
 

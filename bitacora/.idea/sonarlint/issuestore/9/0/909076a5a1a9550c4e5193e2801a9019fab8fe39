@@ -1,12 +1,7 @@
 
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8„¤‹’é1J$6eaa7cf7-f786-4fe8-a8c6-639114bf540b
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8„¤‹’é1J$bad7f1cb-fd01-41c1-96a1-d204ce95ffb2
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8…¤‹’é1J$e3311077-e4fe-4a8c-8aae-53a90eff9db0
-m	java:S106("+Replace this use of System.out by a logger.(ÓœåØ8§ûî’é1J$fd97faf3-0d33-4eb7-9faf-f4710071d35f
-m	java:S106-"+Replace this use of System.out by a logger.(èö„»8š÷ò’é1J$ce6021e8-6f25-4596-af76-3002c0e78fe5
-m	java:S106/"+Replace this use of System.out by a logger.(²”ó“8Ã‰õ’é1J$d4b14f93-0f8d-4de4-a193-7b1bdc454999
-m	java:S1063"+Replace this use of System.out by a logger.(³©†÷8”Òö’é1J$5928c423-8a1e-4aac-90f5-e955987b057a
-r	java:S1069"+Replace this use of System.out by a logger.(ŠÜ‡ùÿÿÿÿ8×Õ…“é1J$9d1b749e-c351-40df-a92d-cc7cc0bc066a
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8…¤‹’é1J$e64d429d-26c2-46b9-a2ed-82bcbc2a7ce2
 Š
-java:S1128"BRemove this unused import 'co.uco.bitacora.config.SecurityConfig'.(£Å Ğüÿÿÿÿ8õïé’é1J$436b17b8-ca56-4786-ae17-801b7f9bd242
+java:S1128"BRemove this unused import 'co.uco.bitacora.config.SecurityConfig'.(£Å Ğüÿÿÿÿ8õïé’é1J$61827fc8-db37-4be7-8cac-ee2390567c1a

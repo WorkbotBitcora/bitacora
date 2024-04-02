@@ -38,14 +38,10 @@ public class RevisionService {
            iObservacionRepository.save(observacion);
            Equipo equipo = new Equipo();
            iEquipoRepository.save(equipo);
-           System.out.println("id del equipo que se crea para la revision:  " + equipo.getId());
-           System.out.println("esta pasando por la creacion de revision ");
-           System.out.println(chekService.obtenerChecksPorId(equipo.getTipoEquipo().getId()));
            Revision revision = new Revision(observacion,equipo, chekService.obtenerChecksPorId(equipo.getTipoEquipo().getId()));
            iRevisionRepository.save(revision);
            return revision;
        }catch (Exception e){
-           System.out.println("Error: " + e.getMessage() );
            return new Revision();
        }
    }

@@ -37,24 +37,19 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
         if (token == null){
             filterChain.doFilter(request,response);
-            System.out.println("ENTRO CON EL TOKEN NULO ");
             return;
         }
 
         nombreUsuario = jwtService.optenerNombreUsuarioPorToken(token);
-        System.out.println("ENTRO CON EL TOKEN INYECTADO ");
         if(nombreUsuario != null && SecurityContextHolder.getContext().getAuthentication() == null){
-            System.out.println("AQUI CAPTURA EL USUARIO DEL TOKEN ");
             UserDetails userDetails = userDetailsService.loadUserByUsername(nombreUsuario);
 
             if (jwtService.isTokenValid(token,userDetails)) {
-                System.out.println("CONFIRMA QUE EL TOKEN ES VALIDO ");
                 UsernamePasswordAuthenticationToken tokenIngreso = new UsernamePasswordAuthenticationToken(
                   userDetails, null,userDetails.getAuthorities());
 
                 tokenIngreso.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                 SecurityContextHolder.getContext().setAuthentication(tokenIngreso);
-                System.out.println("CONFIRMA EL PROCESO ");
             }
         }
         filterChain.doFilter(request,response);

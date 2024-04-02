@@ -48,7 +48,6 @@ public class BitacoraController {
     @ResponseStatus(HttpStatus.ACCEPTED)
     public String actualizarEquipo ( @PathVariable long idRevision , @RequestBody DatosEquipo actualizacion){
         //LA BUSQUEDA SE HACE POR EL ID DE LA REVISION
-        System.out.println("entra al link ");
         return serviciosDeBitacora.editarEquipo(idRevision , actualizacion);
     }
 

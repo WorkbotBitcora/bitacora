@@ -47,12 +47,10 @@ public class JwtService {
     }
 
     public String optenerNombreUsuarioPorToken(String token) {
-        System.out.println("Entra al metodo Claim");
         return optenerClaim(token, Claims::getSubject);
     }
 
     private Claims optenerTodosLosClains(String token){
-        System.out.println("OPTIENE TODOS LOS CLI");
         return Jwts
                 .parserBuilder()
                 .setSigningKey(optenerLlave())
@@ -62,9 +60,7 @@ public class JwtService {
     }
 
     public <T>T optenerClaim(String token , Function<Claims,T> claims){
-        System.out.println("Entra al metodo GENERICO Claim");
         final Claims claims1 = optenerTodosLosClains(token);
-        System.out.println("OPTIENE LOS CLAIMS");
         return claims.apply(claims1);
     }
     private Date optenerFechaExpiracion(String token){

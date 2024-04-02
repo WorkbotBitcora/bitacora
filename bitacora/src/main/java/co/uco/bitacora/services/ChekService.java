@@ -85,7 +85,6 @@ public class ChekService {
             List<Chek> listaDeCheksAGuradar = new ArrayList<>();
             Chek chekDeLista;
             if ( !listRespuesta.isEmpty() ){
-                System.out.println("la lista no es nula ");
                 for (int i = 0; i < listRespuesta.size() ; i++) {
 
                     iChekRepository.findById(listRespuesta.get(i).getIdChek()).ifPresent(dato -> {
@@ -98,19 +97,15 @@ public class ChekService {
                     iChekRepository.save(new Chek(chekDeLista.getNombre(),chekDeLista.getIdTipoEquipo(), chekDeLista.isEstado(), servicioRecomendaciones.listarRecomendacionesPorID(chekDeLista.getId())));
 
                     listaDeCheksAGuradarFinal.add(chekDeLista);
-                    System.out.println("id del chek que va a guardar " + chekDeLista.getId());
                 }
 
                 for (int i = 0; i < listRespuesta.size(); i++) {
-                    System.out.println( "ID: " + idRevision + " elemento: " + listaDeCheksAGuradarFinal.get(i).getRecomendacionList().get(0).getRecomendacion());
                 }
 
                 iRevisionRepository.findById(idRevision).ifPresent(dato -> {
-                    System.out.println("Aqui va a guardar la lista actualizada o lista final ");
                     dato.setChekList(listaDeCheksAGuradar);
-                    System.out.println("Aqui cambia los elementos del la lista  ");
+
                     for (int i = 0; i < dato.getChekList().size(); i++) {
-                        System.out.println( "ID: " + dato.getChekList().get(i).getId() + " Nombre: " + dato.getChekList().get(i).getNombre());
                     }
                     iRevisionRepository.save(dato);
                 });
@@ -123,7 +118,6 @@ public class ChekService {
             }
 
         }catch (Exception e){
-            System.out.println(e.getMessage());
             return "Ocurrio Un Error Inesperado: " + e.getMessage();
         }
     }

@@ -1,19 +1,19 @@
 
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Î˜¡¤å1J$413c1fe7-e8e2-4a7f-97fc-9b77d97b07b0
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õÃ»¤å1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Î˜¡¤å1J$01d4f7f8-c3d3-4efc-b3fb-820cee28ed9f
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õÃ»¤å1J$d941695f-1c0b-4a92-8eca-ad056ba52a9b
 –
-java:S1450"SRemove the "data" field and declare it as a local variable in the relevant methods.(àÁá´8Ğ˜¡¤å1J$1bf111cd-eea5-446f-8700-2d0fd2b9d6de
-•	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÒÑ€şÿÿÿÿ8Ò˜¡¤å1J$47a8265a-cc5f-47e8-94d5-16509d4c9579
-s	java:S106"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8Ö˜¡¤å1J$d58e3879-f010-43b8-80f1-1ac4b70491dc
+java:S1450"SRemove the "data" field and declare it as a local variable in the relevant methods.(àÁá´8Ğ˜¡¤å1J$e1793015-7c4b-4def-a7c4-b175b774e087
+•	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÒÑ€şÿÿÿÿ8Ò˜¡¤å1J$9db89db6-f8da-410e-bd2f-8c37b1dea8be
+F	java:S108œ")Either remove or fill this block of code.(”ı¾8µÖ”âé1
 u
-java:S1602´",Remove useless curly braces around statement(üÿöçşÿÿÿÿ8Ø˜¡¤å1J$b5233cc0-aef7-46a3-9de6-4ee4fe5dfec4
+java:S1602³",Remove useless curly braces around statement(üÿöçşÿÿÿÿ8Ø˜¡¤å1J$a8bc5a44-63d5-46d5-8a52-3d2d81625c5a
 „
-java:S1612´";Replace this lambda with method reference 'respuesta::add'.(üÿöçşÿÿÿÿ8Ù˜¡¤å1J$c8a697b5-bcc4-462e-83ac-adc71d76ff7d
+java:S1612³";Replace this lambda with method reference 'respuesta::add'.(üÿöçşÿÿÿÿ8Ù˜¡¤å1J$9a2be474-79c9-4315-bf15-2dc224ed08c6
 ‘
-java:S1128"IRemove this unused import 'co.uco.bitacora.domains.bitacora.Descripcion'.(…®²‘ûÿÿÿÿ8Ïı¢¤å1J$20a98b82-8a49-4749-91c0-1a0ec5eb936f
+java:S1128"IRemove this unused import 'co.uco.bitacora.domains.bitacora.Descripcion'.(…®²‘ûÿÿÿÿ8Ïı¢¤å1J$613f1af9-8f5b-4ba9-90fd-15585e708398
 Š
-java:S1128"BRemove this unused import 'co.uco.bitacora.domains.revision.Chek'.(›×’Èùÿÿÿÿ8Ïı¢¤å1J$1b565ed8-494a-410d-b8c7-b6e3885a9672
+java:S1128"BRemove this unused import 'co.uco.bitacora.domains.revision.Chek'.(›×’Èùÿÿÿÿ8Ïı¢¤å1J$9b9c5ec6-04ad-447b-8e79-cf67bbb14f90
 –
-java:S1128"NRemove this unused import 'co.uco.bitacora.repository.IDescripcionRepository'.(ËÜÙ‹ùÿÿÿÿ8Ïı¢¤å1J$7390fb6c-5da8-49cf-a18a-e0e24827f075
+java:S1128"NRemove this unused import 'co.uco.bitacora.repository.IDescripcionRepository'.(ËÜÙ‹ùÿÿÿÿ8Ïı¢¤å1J$adcf9146-68de-43f7-b5c8-6cfdaeb16623

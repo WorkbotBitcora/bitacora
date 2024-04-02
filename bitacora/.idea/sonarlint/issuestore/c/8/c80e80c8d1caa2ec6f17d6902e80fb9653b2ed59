@@ -1,21 +1,16 @@
 
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìœØ£å1J$b6f9ae8c-bdb7-4955-9f86-aaf902931390
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìœØ£å1J$f3acf246-f9f2-473d-bd64-af4b8c4929db
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìœØ£å1J$41496b7a-60c3-49e0-9d22-45191ffd7d3f
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìœØ£å1J$eae11afe-1ed1-4906-bb1d-2f1a4c345a9c
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìœØ£å1J$2205a6a0-6019-4c6c-af5e-53a2e6596330
-	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸„ì„8ïœØ£å1J$9c0ba265-7e3f-4ad2-87fa-e3adaee496bb
-m	java:S106X"+Replace this use of System.out by a logger.(ªè‹ş8õœØ£å1J$ce4dc7e4-2a48-495d-ae04-4f5c8d3e7806
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìœØ£å1J$eb070ed8-257d-4be1-a0d9-d0b329da1f10
+	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸„ì„8ïœØ£å1J$4b6baed2-2433-4889-857f-4eae1e5aa7ab
 n
-java:S1602[",Remove useless curly braces around statement(›ş‚8öœØ£å1J$f0b779a0-c2c5-40be-8b98-b9486ca23334
+java:S1602Z",Remove useless curly braces around statement(›ş‚8öœØ£å1J$a0f43adb-24a0-4f10-9d79-86cf9d584767
 ˆ
-java:S1612["FReplace this lambda with method reference 'listaDeCheksAGuradar::add'.(›ş‚8öœØ£å1J$b05fa27e-9260-4199-a81a-4f7825e0b10d
-m	java:S106e"+Replace this use of System.out by a logger.(‡¨¼Á8÷œØ£å1J$1acf5f05-c3d7-4831-ac97-e5813d817b8e
-r	java:S106i"+Replace this use of System.out by a logger.(ˆî€úúÿÿÿÿ8øœØ£å1J$09919487-38b4-44ce-9709-5a28f1d82772
-m	java:S106m"+Replace this use of System.out by a logger.(õÎòš8øœØ£å1J$d47c387f-6cee-4f89-9c2e-373b1bfd8038
-r	java:S106o"+Replace this use of System.out by a logger.(‡‚ÎÎıÿÿÿÿ8›íã£å1J$3a7294e7-f3fe-4370-ac15-cba42e1eaec0
-r	java:S106q"+Replace this use of System.out by a logger.(ÅµáÊùÿÿÿÿ8›íã£å1J$f250cab5-9f65-4ec4-8d38-1300b65d01b2
-r	java:S106~"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8œíã£å1J$d9665b70-26e5-455c-a1cb-2efeea1746bb
+java:S1612Z"FReplace this lambda with method reference 'listaDeCheksAGuradar::add'.(›ş‚8öœØ£å1J$d0db9f2c-425d-4f43-a8fb-cad287d7a619
+p	java:S108f")Either remove or fill this block of code.(õì¾úÿÿÿÿ8şê’âé1J$e2cd1e9c-f61b-45ab-a8e7-66808b31612e
+p	java:S108l")Either remove or fill this block of code.(Òòø¡ÿÿÿÿÿ8µ“âé1J$30aeaba0-21f1-4448-b7f0-1dfdfd18d253
 
-java:S1128	"FRemove this unused import 'org.springframework.data.history.Revision'.(èÑì¯ÿÿÿÿÿ8şİÙ£å1J$00023223-857d-4dfd-b960-7e050835079c
+java:S1128	"FRemove this unused import 'org.springframework.data.history.Revision'.(èÑì¯ÿÿÿÿÿ8şİÙ£å1J$d5986697-a82c-47a9-946d-d030c74bbcac

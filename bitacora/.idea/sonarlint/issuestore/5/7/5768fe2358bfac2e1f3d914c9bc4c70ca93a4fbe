@@ -1,9 +1,9 @@
 
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ƒüé1J$0aef9822-2985-4f77-b38e-ba284b740341
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ƒüé1J$4e9b0d9b-c45b-4f81-9d97-ecf6ea89ffa1
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8„üé1J$fb11369f-c5c1-474e-9751-7f414516d9d9
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8„üé1J$8e3d418f-cb3c-4bab-b968-1022e2098a6b
 ¢
-java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(¸ñÓèüÿÿÿÿ8…üé1J$69b104f5-e935-4bf0-84ed-78a58019efd4
+java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(¸ñÓèüÿÿÿÿ8…üé1J$5d8e0653-7688-46f5-bcea-3a549d86c51b
 
-java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(Á®†‹8†üé1J$c9788ff8-2de8-4db5-93a2-e57b7cc17810
+java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(Á®†‹8†üé1J$f8cd586a-8dcf-4643-b439-a7fac68a60c3

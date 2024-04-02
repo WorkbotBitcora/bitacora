@@ -13,7 +13,6 @@ public class CodificationPassword implements PasswordEncoder {
     @Override
     public boolean matches(CharSequence rawPassword, String encodedPassword) {
         var password = String.valueOf(rawPassword.toString().hashCode());
-        System.out.println(password);
         return encodedPassword.equals(password);
     }
 }

@@ -1,7 +1,3 @@
 
-m	java:S1062"+Replace this use of System.out by a logger.(ìø¾ã8ÖÌ•“é1J$87825a91-cbbe-4463-909a-dbb645abee61
-m	java:S1067"+Replace this use of System.out by a logger.(¡ô­Ò8ØÌ•“é1J$32402b58-ae55-474c-bd62-1ff527c6eee3
-r	java:S106A"+Replace this use of System.out by a logger.(“³µôúÿÿÿÿ8ØÌ•“é1J$2d674709-aa2d-4621-ab2e-3b429c8cd915
-r	java:S106C"+Replace this use of System.out by a logger.(¹×û’þÿÿÿÿ8¾ø•“é1J$91bf298a-7270-4c60-b7f1-7f5e15472573
-^
-java:S1128"BRemove this unused import 'ch.qos.logback.core.net.server.Client'.(”Ÿ˜$8ŽŒŸ“é1
+„
+java:S1128"BRemove this unused import 'ch.qos.logback.core.net.server.Client'.(”Ÿ˜$8ŽŒŸ“é1J$1295e644-f1c1-47c6-9ae8-b7ae66cffb51
