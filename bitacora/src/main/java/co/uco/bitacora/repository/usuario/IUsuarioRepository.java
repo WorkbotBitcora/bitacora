@@ -1,14 +1,12 @@
 package co.uco.bitacora.repository.usuario;
 
-import co.uco.bitacora.domains.revision.Chek;
-import co.uco.bitacora.domains.usuario.Usuario;
+import co.uco.bitacora.domain.usuario.Usuario;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
 import java.util.Optional;
 
 @Repository

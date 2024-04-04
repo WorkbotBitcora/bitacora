@@ -1,7 +1,7 @@
 package co.uco.bitacora.repository.equipo;
 
-import co.uco.bitacora.domains.equipo.Equipo;
-import co.uco.bitacora.domains.equipo.TipoEquipo;
+import co.uco.bitacora.domain.equipo.Equipo;
+import co.uco.bitacora.domain.equipo.TipoEquipo;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;

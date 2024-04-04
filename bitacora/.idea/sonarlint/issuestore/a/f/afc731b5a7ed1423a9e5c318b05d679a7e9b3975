@@ -1,0 +1,38 @@
+
+…
+java:S6813$"BRemove this field injection and use constructor injection instead.(êæÄŞ8õ…¾»ê1J$9da49a21-7331-4e5d-8831-3194b79e7b90
+…
+java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄŞ8õ…¾»ê1J$932b4c23-890f-4627-924e-ba730859c3d6
+…
+java:S6813("BRemove this field injection and use constructor injection instead.(êæÄŞ8õ…¾»ê1J$e7f81a85-ec45-43f5-b689-d68737233010
+…
+java:S6813*"BRemove this field injection and use constructor injection instead.(êæÄŞ8õ…¾»ê1J$15ede19c-ac06-4357-8390-a68cb409255d
+…
+java:S6813,"BRemove this field injection and use constructor injection instead.(êæÄŞ8õ…¾»ê1J$534b0e72-032e-41b6-9d8c-b232a238dca3
+…
+java:S6813."BRemove this field injection and use constructor injection instead.(êæÄŞ8õ…¾»ê1J$4b8917c8-4d84-44b2-b266-844e728d688f
+…
+java:S68130"BRemove this field injection and use constructor injection instead.(êæÄŞ8õ…¾»ê1J$e20156e7-6a33-4f52-b861-c16cc5cfe1d6
+…
+java:S68132"BRemove this field injection and use constructor injection instead.(êæÄŞ8õ…¾»ê1J$956cb250-0e25-4030-8b7e-8f88b58622db
+…
+java:S68134"BRemove this field injection and use constructor injection instead.(êæÄŞ8õ…¾»ê1J$d440fcf4-4ee3-449b-8ae0-93323b8e5861
+…
+java:S68136"BRemove this field injection and use constructor injection instead.(êæÄŞ8õ…¾»ê1J$4254026e-1a8d-4177-8a60-7f6df0b7feea
+…
+java:S68138"BRemove this field injection and use constructor injection instead.(êæÄŞ8õ…¾»ê1J$b12fe61a-8e49-49e0-9a91-23ec997c71cc
+¥
+java:S1450="]Remove the "descripcionAux" field and declare it as a local variable in the relevant methods.(’ôÕìıÿÿÿÿ8÷…¾»ê1J$53faa2f8-06a5-41c4-b241-90c5648ebf5e
+¢
+java:S1450A"_Remove the "recomendacionAux" field and declare it as a local variable in the relevant methods.(áùå¸8÷…¾»ê1J$935d71ab-2427-4fe5-af55-ed6c74a88acc
+Ÿ
+java:S1450@"\Remove the "tipoEquipoAux" field and declare it as a local variable in the relevant methods.(ËŠ’8÷…¾»ê1J$4bcb2074-acec-48cb-a5c6-0f2e9b79d7af
+¥
+java:S1450>"]Remove the "tipoUsuarioAux" field and declare it as a local variable in the relevant methods.(É®˜ßÿÿÿÿÿ8ø…¾»ê1J$e7d128c9-1d78-49be-90e7-ea012c88fe91
+	java:S100F"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÕË„8ü…¾»ê1J$f64f27df-8a94-4927-8806-2855dc6c6ac2
+o
+java:S1602M",Remove useless curly braces around statement(ëÜšÎ8ş…¾»ê1J$62403285-3db7-446c-b124-45599da17011
+u
+java:S1602 ",Remove useless curly braces around statement(üÿöçşÿÿÿÿ8ƒ†¾»ê1J$b2c8e2d2-b172-409c-8a8c-a120bb9ed79a
+u
+java:S1602»",Remove useless curly braces around statement(Öó„ôşÿÿÿÿ8††¾»ê1J$adc8063d-7012-4581-a59c-91f8beadf666

@@ -1,6 +1,0 @@
-
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šöâçùÿÿÿÿ8œÿµ£å1
-i
-java:S1128"LRemove this unused import 'co.uco.bitacora.services.RecomendacionesService'.(¾µ¯Ã8¤ÿµ£å1
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8¤ÿµ£å1

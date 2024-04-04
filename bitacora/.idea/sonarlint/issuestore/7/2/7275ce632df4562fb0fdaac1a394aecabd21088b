@@ -1,10 +1,0 @@
-
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛŞ»æşÿÿÿÿ8Šö½£å1
-m	java:S1172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûãı§8Šö½£å1
-8
-java:S1700"Rename field "recomendacion"(´ÚÙ:8‹ö½£å1
-n	java:S116"RRename this field "id_chek" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(  8ö½£å1
-o	java:S100."NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”óû—üÿÿÿÿ8ö½£å1
-j	java:S1002"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûãı§8ö½£å1
-d
-java:S1128"BRemove this unused import 'co.uco.bitacora.domains.revision.Chek'.(›×’Èùÿÿÿÿ8ö½£å1

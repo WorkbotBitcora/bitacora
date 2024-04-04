@@ -1,7 +1,6 @@
 package co.uco.bitacora.jwt;
 
-import co.uco.bitacora.config.SecurityConfig;
-import co.uco.bitacora.services.jwt.JwtService;
+import co.uco.bitacora.service.jwt.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

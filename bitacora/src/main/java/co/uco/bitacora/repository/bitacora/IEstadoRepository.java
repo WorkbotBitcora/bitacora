@@ -1,6 +1,6 @@
 package co.uco.bitacora.repository.bitacora;
 
-import co.uco.bitacora.domains.bitacora.estado.Estado;
+import co.uco.bitacora.domain.bitacora.estado.Estado;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

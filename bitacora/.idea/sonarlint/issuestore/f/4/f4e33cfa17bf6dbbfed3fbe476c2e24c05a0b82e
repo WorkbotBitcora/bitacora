@@ -1,14 +1,0 @@
-
-˜	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ü­‘ûÿÿÿÿ8áÚÃé1J$47cab5ee-de58-4111-a435-2bc178735b84
-«
-java:S1488<"cImmediately return this expression instead of assigning it to the temporary variable "jwtResponse".(Ó³©ûÿÿÿÿ8âÚÃé1J$175f50ab-94b1-4e2b-8207-b04d97563d84
-Ä
-java:S1186!"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ø«Í‚8Í®¹‘é1J$35bead7b-63f5-42bd-9af6-cd376f5bd304
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8éÚÃé1J$1a05af3f-c0d6-46cf-ba38-7ddde3806068
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8éÚÃé1J$e0a0f18f-b3a7-41f9-84bc-a164f828937b
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8éÚÃé1J$9a8b6fa3-d8b6-4f1c-8cb5-40eba3771539
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8éÚÃé1J$5dd113db-5a2f-4696-b6bd-9ecf9f8984e3

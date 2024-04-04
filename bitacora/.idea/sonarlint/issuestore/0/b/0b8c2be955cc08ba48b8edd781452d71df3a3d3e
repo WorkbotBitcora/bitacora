@@ -1,11 +1,0 @@
-
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Î˜¡¤å1J$209a6570-dc94-4edd-b6a7-cd107ed20464
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8õÃ»¤å1J$ab3f7a91-623e-445c-917b-6e1c6f8864d8
-–
-java:S1450"SRemove the "data" field and declare it as a local variable in the relevant methods.(àÁá´8Ğ˜¡¤å1J$04847cf2-51cf-48c5-9cbd-f16b0628c120
-•	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÄÒÑ€şÿÿÿÿ8Ò˜¡¤å1J$02ab5189-9e00-4f40-99e8-2f762baf52be
-l	java:S108™")Either remove or fill this block of code.(”ı¾8µÖ”âé1J$61b535b8-b32b-46f2-afac-27cd0e80ae61
-u
-java:S1602°",Remove useless curly braces around statement(üÿöçşÿÿÿÿ8Ø˜¡¤å1J$8f782893-6168-4952-97ad-134dc9be24b9

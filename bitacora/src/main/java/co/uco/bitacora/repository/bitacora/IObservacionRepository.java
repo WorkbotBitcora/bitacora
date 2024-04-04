@@ -1,6 +1,6 @@
 package co.uco.bitacora.repository.bitacora;
 
-import co.uco.bitacora.domains.bitacora.observacion.Observacion;
+import co.uco.bitacora.domain.bitacora.observacion.Observacion;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
