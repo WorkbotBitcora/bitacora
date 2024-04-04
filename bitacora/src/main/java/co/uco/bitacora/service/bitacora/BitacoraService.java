@@ -27,6 +27,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -177,9 +178,15 @@ public class BitacoraService {
             return "no se actualizo";
         }
     }
-    public Bitacora mostrarPorUsuario(long id){
-
-        return iBitacoraRepository.findById(id).orElseThrow(()-> new UsernameNotFoundException("No se encontro La Bitacora"));
+    public List<Bitacora> mostrarPorUsuario(long id){
+        List<Bitacora> respuestas = new ArrayList<>();
+        List<Bitacora> bitacoras = iBitacoraRepository.findAll();
+        for (int i = 0; i < bitacoras.size(); i++) {
+            if (bitacoras.get(i).getUsuario().getId() == id){
+                respuestas.add(bitacoras.get(i));
+            }
+        }
+        return respuestas;
     }
 
 

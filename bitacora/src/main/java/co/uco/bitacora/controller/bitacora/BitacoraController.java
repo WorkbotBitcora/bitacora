@@ -54,7 +54,7 @@ public class BitacoraController {
     }
 
     @GetMapping("/usuario/{id}")//ok paso pruebas
-    public ResponseEntity<Bitacora> mostarPorUsuario(@PathVariable long id) {
+    public ResponseEntity<List<Bitacora>> mostarPorUsuario(@PathVariable long id) {
         return ResponseEntity.ok(serviciosDeBitacora.mostrarPorUsuario(id));
     }
 
