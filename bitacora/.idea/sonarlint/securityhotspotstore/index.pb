@@ -119,3 +119,7 @@ s
 Csrc/main/java/co/uco/bitacora/controllers/check/ChekController.java,c\a\ca39d51405ce3e1d7a9070035e4cc7712a96aff3
 t
 Dsrc/main/java/co/uco/bitacora/services/bitacora/BitacoraService.java,a\a\aaef790b4614c71a5e9ff7b7bba76d6b97f8d98d
+€
+Psrc/main/java/co/uco/bitacora/controllers/observacion/ObservacionController.java,9\e\9e5e8805cc4351b8054dbea69904d55e43fb56ed
+„
+Tsrc/main/java/co/uco/bitacora/controllers/recomendacion/RecomendacionController.java,6\d\6d160262dc3f44e0ffc67b3c5ddb9205a2535ce1

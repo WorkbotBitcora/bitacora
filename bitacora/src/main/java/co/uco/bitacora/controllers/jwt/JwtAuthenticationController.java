@@ -11,7 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/procesador/bitacora/v2/Authentication")
+@RequestMapping("/procesador/bitacora/v1/Authentication")
 @RequiredArgsConstructor
 public class JwtAuthenticationController {
 

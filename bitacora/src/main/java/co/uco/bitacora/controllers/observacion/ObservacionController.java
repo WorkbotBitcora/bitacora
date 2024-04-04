@@ -13,7 +13,7 @@ public class ObservacionController {
     @Autowired
     private ObservacionesService observacionesService = new ObservacionesService();
 
-    @PatchMapping("/obs")
+    @PatchMapping("/observacion")
     @ResponseStatus(HttpStatus.CREATED)
     public String actualizarObservaciones(@RequestBody ObservacionData dato){
         return observacionesService.actualizarObservacion(dato);

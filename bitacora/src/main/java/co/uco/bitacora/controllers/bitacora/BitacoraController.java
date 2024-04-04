@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/procesador/bitacora/v2/bitacora")
+@RequestMapping("/procesador/bitacora/v1/bitacora")
 public class BitacoraController {
 
 
