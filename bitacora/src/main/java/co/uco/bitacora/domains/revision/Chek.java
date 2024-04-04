@@ -1,10 +1,8 @@
 package co.uco.bitacora.domains.revision;
 
 import co.uco.bitacora.domains.recomendacion.Recomendacion;
-import co.uco.bitacora.services.RecomendacionesService;
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
 import java.util.List;
 @Entity
 @Table(name = "Cheks")

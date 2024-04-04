@@ -1,6 +1,5 @@
 package co.uco.bitacora.domains.usuario;
 
-import co.uco.bitacora.repository.ITipoUsuarioRepository;
 import jakarta.persistence.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

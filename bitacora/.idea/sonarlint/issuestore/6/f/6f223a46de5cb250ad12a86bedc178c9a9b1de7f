@@ -1,47 +1,41 @@
 
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$4253d5d7-a125-4e24-9b1d-29d5ab81a287
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$09f49c33-1209-4f72-a98f-f22ee194e04f
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$cd014b8d-bb33-4153-aa7d-a2c1b8c4865e
+java:S6813""BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$1529e093-4b46-4ef0-8c8c-cfef215e0961
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$8501093d-117b-4541-be41-0f6463261ab1
+java:S6813$"BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$c7f63313-f761-4493-bbab-2e612b165a24
 …
-java:S6813!"BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$f57da345-4cf8-45bd-bef9-d9c5e2727b56
+java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$2630cc2f-5d6a-443c-a1b0-649847d9693f
 …
-java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$7b0e2e7c-95eb-4298-9e66-f082883dbcad
+java:S6813("BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$0d906684-dd91-4f4d-ae4d-6c7b7b4ef93d
 …
-java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$ef222ba3-4b4f-40e3-bc40-83d8338e6ed7
+java:S6813*"BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$f58d13b2-f012-4f65-9508-42a645ff1779
 …
-java:S6813'"BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$42b1b118-9994-429e-857e-1967aaa7ebd6
+java:S6813,"BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$918fd30b-a2fc-41f2-ada8-f0a92a38f1a6
 …
-java:S6813)"BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$3d8f1e81-0e0b-4a38-b037-0bc69d899de3
+java:S6813."BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$823eeda7-2caa-4891-abbe-2a811daea968
 …
-java:S6813+"BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$e79d54ae-c318-4666-a2c1-b69dc9b0d276
+java:S68130"BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$13ee04b6-4b37-4318-9691-b18ebc2a685e
 …
-java:S6813-"BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$0242704e-4cf1-485c-8c2a-e5d47bd4fe16
+java:S68132"BRemove this field injection and use constructor injection instead.(êæÄŞ8Áˆ”é1J$6daf26ee-96b6-4621-a1ee-d6add0167788
 ¥
-java:S14502"]Remove the "descripcionAux" field and declare it as a local variable in the relevant methods.(’ôÕìıÿÿÿÿ8Ãˆ”é1J$5d7b0249-ba52-4c78-ae91-3901ff348ffa
+java:S14507"]Remove the "descripcionAux" field and declare it as a local variable in the relevant methods.(’ôÕìıÿÿÿÿ8Ãˆ”é1J$bdff3694-5bae-4e8d-a370-b097ff6f831a
 ¢
-java:S14506"_Remove the "recomendacionAux" field and declare it as a local variable in the relevant methods.(áùå¸8Ãˆ”é1J$64eaed46-0bc5-442c-a149-62d6f2a1c6ad
+java:S1450;"_Remove the "recomendacionAux" field and declare it as a local variable in the relevant methods.(áùå¸8Ãˆ”é1J$a103f2ef-58e1-4932-9cd0-54d8f0504dd0
 Ÿ
-java:S14505"\Remove the "tipoEquipoAux" field and declare it as a local variable in the relevant methods.(ËŠ’8Ãˆ”é1J$35596ad3-13dc-41be-b38c-8100fe175dd8
+java:S1450:"\Remove the "tipoEquipoAux" field and declare it as a local variable in the relevant methods.(ËŠ’8Ãˆ”é1J$42cb6050-a273-46cc-ae7b-1d1dc378b0e5
 ¥
-java:S14503"]Remove the "tipoUsuarioAux" field and declare it as a local variable in the relevant methods.(É®˜ßÿÿÿÿÿ8Ãˆ”é1J$711935bb-d9c9-47f1-a523-34d19ce3d13c
-	java:S100="NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÕË„8Çˆ”é1J$550c1c2f-c473-4cca-90dc-69c28b06e405
+java:S14508"]Remove the "tipoUsuarioAux" field and declare it as a local variable in the relevant methods.(É®˜ßÿÿÿÿÿ8Ãˆ”é1J$b0847069-d3cd-400c-8100-9965aa86826c
+	java:S100B"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÕË„8Çˆ”é1J$1a26c8c6-8f71-4e42-9805-1e3efd7994e0
 z
-java:S1135;"2Complete the task associated to this TODO comment.(ÊÊúŸÿÿÿÿÿ8Çˆ”é1J$3b120865-f66c-4770-8cac-6e6e86c35498
+java:S1135@"2Complete the task associated to this TODO comment.(ÊÊúŸÿÿÿÿÿ8Çˆ”é1J$a26a813f-dfa4-4cfb-b450-ce13670f03e2
 o
-java:S1602D",Remove useless curly braces around statement(ëÜšÎ8Êˆ”é1J$2a5702bd-d222-4d62-b94b-33cd8cdb53cb
+java:S1602I",Remove useless curly braces around statement(ëÜšÎ8Êˆ”é1J$28d0ca58-aba8-4020-bf77-cf099ffa7b5c
 u
-java:S1602’",Remove useless curly braces around statement(üÿöçşÿÿÿÿ8Ìˆ”é1J$410b2328-1aec-4779-b23e-44b69774123e
-n	java:S106"+Replace this use of System.out by a logger.(ÀŸï×8Íˆ”é1J$ac0ad0b9-02c4-4102-b678-7f0a8acdecf1
-s	java:S106¢"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8Îˆ”é1J$79b33ff3-9a2d-4fe3-852c-a09c5650527f
-„	java:S125¬"<This block of commented-out lines of code should be removed.(‚ğú½øÿÿÿÿ8Ğˆ”é1J$46eefda9-086b-48d9-b1d1-27497643357b
+java:S1602—",Remove useless curly braces around statement(üÿöçşÿÿÿÿ8Ìˆ”é1J$5db9f011-255f-4705-9dc9-947e265a75b0
+n	java:S106£"+Replace this use of System.out by a logger.(ÀŸï×8Íˆ”é1J$5e56d50f-052d-4671-ae97-376d436eaf01
+s	java:S106§"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8Îˆ”é1J$359b96c2-0926-4f29-a414-243e17cdd44e
+„	java:S125±"<This block of commented-out lines of code should be removed.(‚ğú½øÿÿÿÿ8Ğˆ”é1J$d3f7e600-9946-4266-a3d1-bad048cc25e0
 u
-java:S1602Á",Remove useless curly braces around statement(Öó„ôşÿÿÿÿ8Ğˆ”é1J$9b941d1d-be1a-4943-8403-d3767dcadc58
-x
-java:S1128"5Remove this unused import 'lombok.NoArgsConstructor'.(¸¨›8ã”‰”é1J$ecb1856c-bfe6-4499-b8d7-3e50a7b3a029
-ƒ
-java:S1128";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØúøÿÿÿÿ8ã”‰”é1J$3ed68c58-c096-4e9c-b071-cd3818bab483
-s
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ã”‰”é1J$357e3220-0389-45ca-bb50-f61c93b1e91a
+java:S1602Æ",Remove useless curly braces around statement(Öó„ôşÿÿÿÿ8Ğˆ”é1J$3b1dac77-20c1-49f5-b613-67c5cb13f688

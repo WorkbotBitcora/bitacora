@@ -1,6 +1,6 @@
 package co.uco.bitacora.domains.revision;
 
-import co.uco.bitacora.domains.bitacora.Observacion;
+import co.uco.bitacora.domains.bitacora.observacion.Observacion;
 import co.uco.bitacora.domains.equipo.Equipo;
 import jakarta.persistence.*;
 

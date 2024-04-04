@@ -31,7 +31,7 @@ public class SecurityConfig {
         httpSecurity.cors(AbstractHttpConfigurer::disable);
         httpSecurity.csrf(AbstractHttpConfigurer::disable);
         return httpSecurity.authorizeHttpRequests(dato ->
-            dato.requestMatchers("/procesador/bitacora/v2/Authentication/**").permitAll().anyRequest().authenticated()
+            dato.requestMatchers("/procesador/bitacora/v2/Authentication/**","/procesador/bitacora/v2/bitacora/cargarDB","/procesador/bitacora/v1/chek/chek").permitAll().anyRequest().authenticated()
         )
                 .sessionManagement(sessionManager->
                         sessionManager.sessionCreationPolicy(SessionCreationPolicy.STATELESS))

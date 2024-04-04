@@ -5,15 +5,13 @@ import co.uco.bitacora.domains.objetosAuxiliares.EditableUsuario;
 import co.uco.bitacora.domains.objetosAuxiliares.Login;
 import co.uco.bitacora.domains.usuario.TipoUsuario;
 import co.uco.bitacora.domains.usuario.Usuario;
-import co.uco.bitacora.repository.ITipoUsuarioRepository;
-import co.uco.bitacora.repository.IUsuarioRepository;
+import co.uco.bitacora.repository.usuario.ITipoUsuarioRepository;
+import co.uco.bitacora.repository.usuario.IUsuarioRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -1,5 +1,7 @@
 package co.uco.bitacora.domains.bitacora;
 
+import co.uco.bitacora.domains.bitacora.descripcion.Descripcion;
+import co.uco.bitacora.domains.bitacora.estado.Estado;
 import co.uco.bitacora.domains.usuario.Usuario;
 import jakarta.persistence.*;
 
@@ -27,7 +29,7 @@ public class Bitacora {
     private co.uco.bitacora.domains.revision.Revision Revision;
 
     @ManyToOne
-    private Estado Estado;
+    private co.uco.bitacora.domains.bitacora.estado.Estado Estado;
 
     @PrePersist
     protected void onCreate(){

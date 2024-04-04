@@ -107,3 +107,15 @@ k
 ;src/main/java/co/uco/bitacora/services/RevisionService.java,4\0\40f1811c3d3cc3139993cf1428e5aabbbce6bfd9
 f
 6src/main/java/co/uco/bitacora/BitacoraApplication.java,b\5\b5b7f2c294ec95b3f4a1333a47fa77a695e271a7
+x
+Hsrc/main/java/co/uco/bitacora/controllers/usuario/UsuarioController.java,b\3\b30ec020e15b5160f4061d37e44bcd1bfab08c0b
+t
+Dsrc/main/java/co/uco/bitacora/services/revision/RevisionService.java,c\7\c725dabebae49068769e36691e4463237ff7d6a6
+r
+Bsrc/main/java/co/uco/bitacora/services/usuario/UsuarioService.java,1\4\140214ecc8e0ee6ee95c8ad07aba9d855d9a2b20
+z
+Jsrc/main/java/co/uco/bitacora/controllers/bitacora/BitacoraController.java,5\a\5ad14da17b8df2bccfba14749293ff33f5988d90
+s
+Csrc/main/java/co/uco/bitacora/controllers/check/ChekController.java,c\a\ca39d51405ce3e1d7a9070035e4cc7712a96aff3
+t
+Dsrc/main/java/co/uco/bitacora/services/bitacora/BitacoraService.java,a\a\aaef790b4614c71a5e9ff7b7bba76d6b97f8d98d

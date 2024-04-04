@@ -1,0 +1,36 @@
+
+…
+java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìŞ¹ê1J$13634471-d0ec-430b-83e1-5f3d36d5d846
+…
+java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìŞ¹ê1J$2da9661e-c510-436f-9181-6eb5938ec5f1
+…
+java:S6813'"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìŞ¹ê1J$ba713729-b3cb-4ba5-83ff-af046ea790cf
+…
+java:S6813)"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìŞ¹ê1J$563e69e5-ac48-4e8d-be90-40d41c695566
+…
+java:S6813+"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìŞ¹ê1J$d1d52249-e76d-496e-a488-7e16f3e8b6d0
+…
+java:S6813-"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìŞ¹ê1J$e4d04ae2-b80b-4f74-a53c-14a3f644e194
+…
+java:S6813/"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìŞ¹ê1J$20b60fc9-548e-4954-b373-ff22707cf2af
+…
+java:S68131"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìŞ¹ê1J$d5a242f8-80b2-4170-881d-df35ff24e050
+…
+java:S68133"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìŞ¹ê1J$c8d9483d-cd3f-4d9c-9eea-c0c38de9d115
+…
+java:S68135"BRemove this field injection and use constructor injection instead.(êæÄŞ8ìŞ¹ê1J$70a19f7a-d752-48f8-a704-eff78cb1725f
+¥
+java:S1450:"]Remove the "descripcionAux" field and declare it as a local variable in the relevant methods.(’ôÕìıÿÿÿÿ8ìŞ¹ê1J$d3bc0619-9f83-4179-99c6-561a42d4ade2
+¢
+java:S1450>"_Remove the "recomendacionAux" field and declare it as a local variable in the relevant methods.(áùå¸8ìŞ¹ê1J$31b1d5b9-1ad9-419a-8605-d4126f2dd46d
+Ÿ
+java:S1450="\Remove the "tipoEquipoAux" field and declare it as a local variable in the relevant methods.(ËŠ’8‘ìŞ¹ê1J$7eecf1db-db69-4449-a1f9-9285351057ee
+¥
+java:S1450;"]Remove the "tipoUsuarioAux" field and declare it as a local variable in the relevant methods.(É®˜ßÿÿÿÿÿ8‘ìŞ¹ê1J$b40b31ee-d68b-4b9d-b637-0ef60878ccda
+	java:S100C"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øÕË„8˜ìŞ¹ê1J$51d97e70-54b2-4eb9-8d35-cc83876693ac
+o
+java:S1602J",Remove useless curly braces around statement(ëÜšÎ8šìŞ¹ê1J$3552ba0b-215a-477c-b71c-6079103856dc
+u
+java:S1602",Remove useless curly braces around statement(üÿöçşÿÿÿÿ8¡ìŞ¹ê1J$e7fb1788-15dd-4f26-9bd8-5f029c81d737
+u
+java:S1602¶",Remove useless curly braces around statement(Öó„ôşÿÿÿÿ8¦ìŞ¹ê1J$1ec044b8-ebb6-43fd-8922-85c07114299b

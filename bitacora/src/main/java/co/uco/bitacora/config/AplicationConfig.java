@@ -1,6 +1,6 @@
 package co.uco.bitacora.config;
 
-import co.uco.bitacora.repository.IUsuarioRepository;
+import co.uco.bitacora.repository.usuario.IUsuarioRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
