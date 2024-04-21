@@ -1,14 +1,0 @@
-
-k	java:S1178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ü­‘ûÿÿÿÿ
-~
-java:S1488<"cImmediately return this expression instead of assigning it to the temporary variable "jwtResponse".(Ó³©ûÿÿÿÿ
-—
-java:S1186!"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ø«Í‚
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ

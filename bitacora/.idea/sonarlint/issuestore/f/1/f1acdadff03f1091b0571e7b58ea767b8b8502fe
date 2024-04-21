@@ -1,15 +1,0 @@
-
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Ý® ½ê1
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Þ® ½ê1
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Þ® ½ê1
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8Þ® ½ê1
-j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸„ì„8á® ½ê1
-L	java:S106`"+Replace this use of System.out by a logger.(©þêÜúÿÿÿÿ8è® ½ê1
-H
-java:S1602q",Remove useless curly braces around statement(›þ‚8ì® ½ê1
-b
-java:S1612q"FReplace this lambda with method reference 'listaDeCheksAGuradar::add'.(›þ‚8ííä½ê1
